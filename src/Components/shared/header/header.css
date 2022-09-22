@@ -1,0 +1,11 @@
+.logo{
+    width:290px;
+}
+.sec-header{
+    background: #272727;
+
+}
+.sec-header .menu a{
+    color: #fff;
+    font-size: 16px;
+}

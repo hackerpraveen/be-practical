@@ -3,7 +3,7 @@ import { Route} from 'react-router-dom';
 import Header  from '../header/header';
 import Footer  from '../footer/footer';
 const SiteLayout = (props) => {
-  const { component: Component, pagename:pagename, ...rest} = props;
+  const { component: Component, ...rest} = props;
     return (
       <React.Fragment>
         <Header />

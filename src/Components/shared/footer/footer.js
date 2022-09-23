@@ -21,7 +21,7 @@ function Footer(props) {
                     </div>
                 </div>
 
-				<div class="col-lg-4 col-md-4 col-xs-12 text-center">
+				<div class="col-lg-4 col-md-4 col-xs-12 ">
                     <div class="widget clearfix">
                         <div class="widget-title">
                             <h3>Information Link</h3>
@@ -37,7 +37,7 @@ function Footer(props) {
                     </div>
                 </div>
 				
-                <div class="col-lg-4 col-md-4 col-xs-12 text-right">
+                <div class="col-lg-4 col-md-4 col-xs-12 ">
                     <div class="widget clearfix">
                         <div class="widget-title">
                             <h3>Contact Details</h3>

@@ -11,11 +11,11 @@ const Header = () => {
   <div  >
     <div className="sec-header border-bottom border-dark">
       <div className="container">
-        <div className="d-md-flex pt-1 pb-1 justify-content-between">
-          <div style={{color:"#a7a7a7"}}>
-          <span className="mr-3"><i className="fas fa-envelope mr-1"/>  info@be-practical.com</span>
-           <span className="mr-3"><i className="fas fa-phone mr-1"/> +91-9242079119</span>
-           <span className="mr-3"><i className="fas fa-location-dot mr-1"/> Bengaluru</span>
+        <div className="d-md-flex p-1 justify-content-between">
+          <div style={{color:"#a7a7a7"}} className="row">
+          <span className="mr-3 "><i className="fas fa-envelope mr-1"/>  info@be-practical.com</span>
+           <span className="mr-3 "><i className="fas fa-phone mr-1"/> +91-9242079119</span>
+           <span className="mr-3 "><i className="fas fa-location-dot mr-1"/> Bengaluru</span>
 
 
           </div>

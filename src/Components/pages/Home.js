@@ -1,16 +1,8 @@
 import React from 'react';
 import './pages.css';
-import { Carousel } from 'antd';
-import blog_1 from '../../img/blog_1.jpg'
+
 import { useHistory } from 'react-router-dom';
 
-const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
 
 const Home = () => {
   const history = useHistory();

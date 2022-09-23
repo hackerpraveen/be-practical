@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch,Redirect } from 'react-router-dom';
+import { Route} from 'react-router-dom';
 import Header  from '../header/header';
 import Footer  from '../footer/footer';
 const SiteLayout = (props) => {

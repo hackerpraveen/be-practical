@@ -1,22 +1,16 @@
-import { Button } from 'antd';
-import {HomeOutlined} from '@ant-design/icons';
+
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    Switch
   } from "react-router-dom";
-  import Home from "./Components/pages/Home";
   import { SiteLayout } from "./Components/shared";
+  import Home from "./Components/pages/Home";
 import CTIP from './Components/pages/CTIP';
 import PermanentStaffing from './Components/pages/PermanentStaffing';
 import TCStaffing from './Components/pages/TCStaffing';
 import TrainDeploy from './Components/pages/TrainDeploy';
 // import Services from './components/services/services';
 
-//life@sss
-// import {SecLifePage, SecLife, SecLifeSSS} from './components/pages/sections';
 
 
 const Routes = () => {

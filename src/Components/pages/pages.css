@@ -165,9 +165,12 @@
       opacity: 1;
   }
 }
-.overlap-cards{
-  margin-top: -90px;
+@media (min-width: 768px) {
+  .overlap-cards{
+    margin-top: -90px;
+  }
 }
+
 .slide-up{
   animation: slide-up 2s;
 }

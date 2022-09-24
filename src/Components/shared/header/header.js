@@ -31,9 +31,9 @@ const Header = () => {
       <div className="container px-0" >
         <nav className="navbar navbar-expand-md navbar-dark justify-content-between align-items-center  px-0 " >
           <a onClick={()=>{onNavigation('home')}} className="navbar-brand col-auto pl-0">
-            <h1 className='m-0 text-white'><img src={require('../../../img/logo_icon.png')} className="mr-2 mb-2"/> Be Practical
+            <div className='bg-white pl-3 pr-4 ' style={{borderRadius:'50px'}}><img src={require('../../../img/logo_name.png')} className=""/> 
               {/* <img className="logo"  src="./assets/images/sss-logo.png"/> */}
-            </h1>
+            </div>
           </a>
           <button
             type="button"

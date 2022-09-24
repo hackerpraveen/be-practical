@@ -31,7 +31,7 @@ const Home = () => {
     </div>
     <div class="carousel-item">
     <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-02.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
-      <div className='text-white '>
+      <div className='text-white slide-up'>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>There are many of passages of lorem Ipsum, but the majori have <br/>suffered alteration in some form.</p>
         <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>

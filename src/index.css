@@ -33,6 +33,13 @@ code {
 }
 /** font-size E*/
 /** colors S*/
+.theme-color-1{
+  color:#28aa4a !important;
+
+}
+.theme-bgcolor-1{
+  background-color:#28aa4a ;
+}
 .text-color-1st{
   color:#eb3225 !important;
 }

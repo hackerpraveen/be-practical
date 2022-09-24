@@ -57,14 +57,14 @@ const Home = () => {
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
   <div class="card-body text-center">
-    <i className='fas fa-person-chalkboard mb-4 mt-3' style={{fontSize:'80px',color:'#eb3225'}}></i>
+    <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
     <h5 class="card-title">Corporate Training and Induction Program </h5>
      <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary bg-color-1st' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
   </div>
 </div>
 
@@ -76,14 +76,14 @@ const Home = () => {
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
   <div class="card-body text-center">
-    <i className='fas fa-people-group mb-4 mt-3' style={{fontSize:'80px',color:'#eb3225'}}></i>
+    <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
     <h5 class="card-title">Permanent Staffing </h5><br/>
      <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_03.png')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary bg-color-1st' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
   </div>
 </div>
 
@@ -95,14 +95,14 @@ const Home = () => {
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
   <div class="card-body text-center">
-    <i className='fas fa-users-between-lines mb-4 mt-3' style={{fontSize:'80px',color:'#eb3225'}}></i>
+    <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
     <h5 class="card-title">Temporary / Contract Staffing </h5>
      <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_04.png')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary bg-color-1st' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
   </div>
 </div>
 
@@ -114,14 +114,14 @@ const Home = () => {
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
   <div class="card-body text-center">
-    <i className='fas fa-person-walking-luggage mb-4 mt-3' style={{fontSize:'80px' ,color:'#eb3225'}}></i>
+    <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i>
     <h5 class="card-title">Train & Deploy </h5><br/>
      <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary bg-color-1st' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
   </div>
 </div>
 
@@ -139,9 +139,9 @@ const Home = () => {
     <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="message-box">
-                        <h4 style={{color:"#eb3225"}}>Why choose us?</h4>
+                        <h4 className='theme-color-1'>Why choose us?</h4>
                         <h1>Because we make us different.</h1>
-                        <p style={{fontSize:'18px'}}><b>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
+                        <p style={{fontSize:'18px'}}><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
 &nbsp;&nbsp;</p>
                     </div>
                 </div>

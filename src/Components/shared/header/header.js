@@ -13,14 +13,14 @@ const Header = () => {
       <div className="container">
         <div className="d-md-flex p-1 justify-content-between">
           <div style={{color:"#a7a7a7"}} className="row">
-          <span className="mr-3 "><i className="fas fa-envelope mr-1"/>  info@be-practical.com</span>
-           <span className="mr-3 "><i className="fas fa-phone mr-1"/> +91-9242079119</span>
-           <span className="mr-3 "><i className="fas fa-location-dot mr-1"/> Bengaluru</span>
+          <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
+           <span className="mr-3 "><i className="fas fa-phone mr-1 theme-color-1"/> +91-9242079119</span>
+           <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span>
 
 
           </div>
           <div style={{color:"#a7a7a7"}}>
-          <i className="fab fa-square-facebook mr-2"/> <i className="fab fa-square-twitter mr-2"/> <i className="fab fa-square-instagram mr-1"/> 
+          <i className="fab fa-square-facebook mr-3"/> <i className="fab fa-square-twitter mr-3"/> <i className="fab fa-square-instagram mr-1"/> 
           </div>
         </div>
 
@@ -45,11 +45,11 @@ const Header = () => {
           </button>
          <div className=" pr-0" >
           <div className="collapse navbar-collapse menu " id="navbarCollapse">
-          <a className="nav-link" onClick={()=>{onNavigation('home')}}>  Home </a>
+          <a className={(window.location.pathname=='/home'||window.location.pathname=='/')?"theme-color-1 nav-link" : "nav-link"}  onClick={()=>{onNavigation('home')}}>  Home </a>
             <a className="nav-link" >  About Us </a>
             <a className="nav-link" >  Services </a>
             <a className="nav-link">  Contact Us </a>
-            <a  className="nav-link rounded-pill btn bg-color-1st btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a>
+            <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a>
 
           </div>
 

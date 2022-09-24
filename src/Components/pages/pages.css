@@ -109,6 +109,62 @@
 }
 
 
+.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+  border-bottom: none !important ;
+}
+
+.ant-tabs-tab {
+  font-size: 18px;
+  color: #fff;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #28aa4a;
+  text-shadow: 0 0 0.25px currentcolor;
+}
+.ant-tabs-ink-bar {
+
+  background: #28aa4a;
+}
+.ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
+  color: #28aa4a;
+}
+.ant-tabs-tab:hover {
+  color: #28aa4a;
+}
+
+.list li:before {
+  color: #28aa4a;
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+.list{
+  list-style: none;
+  padding: 0;
+  color: #bfbfbf;
+  font-size: 18px;
+}
+.list li {
+  padding-left: 1.3em;
+}
+
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 /* .bgImg::before {
     content: "";

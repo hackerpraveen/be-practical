@@ -2,6 +2,7 @@ import React from 'react';
 import './pages.css';
 
 import { useHistory } from 'react-router-dom';
+import { Tabs } from 'antd';
 
 
 const Home = () => {
@@ -193,16 +194,16 @@ const Home = () => {
         </div>
   
     </div>
-    <div style={{backgroundColor:'#fff'}} className='p-2'>
+    <div style={{backgroundColor:'#fff'}} className='pt-md-2 pb-md-2 pt-1 pb-1'>
     <div className='container'>
-    <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
+    <div class="row align-items-center m-md-5 mt-4 mb-4 ">
     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="post-media wow fadeIn">
                         <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" class="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box">
+                    <div class="message-box mt-md-0 mt-4">
                         <h4 className='theme-color-1'style={{fontSize:'20px'}} >Welcome to Agency</h4>
                         <h1 style={{fontSize:'50px',fontWeight:700}}>Best Quality Recruitment Staffing Agency</h1>
                         <p style={{fontSize:'18px'}} className="detail-text-color"><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
@@ -264,18 +265,67 @@ const Home = () => {
     <div style={{backgroundImage: `url(${require('../../img/sec-bg-01.jpg')})`, backgroundRepeat: "no-repeat",backgroundSize: 'cover', backgroundAttachment: 'fixed',}}>
     <div className=' w-100 h-100 pt-md-5 pb-md-5 pt-2 pb-2' style={{ backgroundColor: 'rgba(39, 39, 39, 0.9)'}}>
       <div className='container'>
-        <div className='row'>
-          <div className='col-md-6 col-12'>
+      <div class="row align-items-center m-md-5 mt-4 mb-4 ">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="message-box">
+                        <h4 className='theme-color-1' style={{fontSize:'20px'}}>Learn About Agency</h4>
+                        <h1 className='text-white' style={{fontSize:'50px',fontWeight:700}}>We’re Reliable & Cost Efficiant Recruitment Agency</h1>
+                        <button className='btn btn-secondary theme-bgcolor-1' >Discover More</button>
+
+                       
+                    </div>
+                </div>
+				
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="post-media wow fadeIn">
+                    <Tabs
+    defaultActiveKey="1"
+    items={[
+      {
+        label: `For Employers`,
+        key: '1',
+        children:(<div className='row fade-in'>
+          <div className='col-md-5 '>
+              <img src={require('../../img/sec-img-01.jpg')}/>
           </div>
-          <div className='col-md-6 col-12'>
+          <div className='col-md-7 '>
+            <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
+            <ul class="list clearfix">
+              <li>Support on hiring employeers</li>
+              <li>Get rxceptional service for growth</li>
+              <li>Outsourced consulting business</li> </ul>
           </div>
+
+        </div>),
+      },
+      {
+        label: `For Employees`,
+        key: '2',
+       children:(<div className='row fade-in'>
+        <div className='col-md-5 '>
+            <img src={require('../../img/sec-img-01.jpg')}/>
         </div>
+        <div className='col-md-7 '>
+          <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
+          <ul class="list clearfix">
+            <li>Support on hiring employeers</li>
+            <li>Get rxceptional service for growth</li>
+            <li>Outsourced consulting business</li> </ul>
+        </div>
+
+      </div>),
+      }
+    ]}
+  />
+                    </div>
+                </div>
+			</div>
 
       </div>
       </div>
     </div>
  
-    <div className='container'>
+    {/* <div className='container'>
     <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="message-box">
@@ -292,7 +342,7 @@ const Home = () => {
                     </div>
                 </div>
 			</div>
-    </div>
+    </div> */}
         </div>
     );
 }

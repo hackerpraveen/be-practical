@@ -20,9 +20,11 @@ const Home = () => {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
-      <div className='text-white '>
+      <div className='text-white slide-up '>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>There are many of passages of lorem Ipsum, but the majori have <br/>suffered alteration in some form.</p>
+        <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
+  
         </div>
 
       </div>
@@ -32,6 +34,8 @@ const Home = () => {
       <div className='text-white '>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>There are many of passages of lorem Ipsum, but the majori have <br/>suffered alteration in some form.</p>
+        <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
+
         </div>
 
       </div>    </div>
@@ -324,25 +328,68 @@ const Home = () => {
       </div>
       </div>
     </div>
- 
-    {/* <div className='container'>
-    <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box">
-                        <h4 className='theme-color-1'>Why choose us?</h4>
-                        <h1>Because we make us different.</h1>
-                        <p style={{fontSize:'18px'}}><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
-&nbsp;&nbsp;</p>
-                    </div>
-                </div>
-				
-				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="post-media wow fadeIn">
-                        <img src={require('../../img/blog_3.jpg')} alt="" class="img-fluid img-rounded w-100"/>
-                    </div>
-                </div>
-			</div>
-    </div> */}
+    <div className='overlap-cards '>
+      <div className='container'>
+      <div class="row align-items-center m-md-5 mt-4 mb-4 " style={{borderTop:'12px solid #28aa4a'}}>
+        <div className='col-md-3 border bg-white text-center p-3'>
+          <i className='fas fa-clipboard-check mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
+          <div>
+          <span  data-speed="1500" data-stop="8080" style={{    fontSize: '40px', lineHeight: '50px', color: "#272727"}}>8080</span>
+            <p className='detail-text-color' style={{fontWeight:'500',fontSize:'14px'}}>Project Completed</p>
+          </div>
+        </div>
+        <div className='col-md-3 border bg-white text-center p-3'>
+          <i className='far fa-id-badge mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
+          <div>
+          <span  data-speed="1500" data-stop="697" style={{    fontSize: '40px', lineHeight: '50px', color: "#272727"}}>697</span>
+            <p className='detail-text-color' style={{fontWeight:'500',fontSize:'14px'}}>Employer Solutions</p>
+          </div>
+        </div>
+        <div className='col-md-3 border bg-white text-center p-3'>
+          <i className='far fa-address-card mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
+          <div>
+          <span  data-speed="1500" data-stop="440" style={{    fontSize: '40px', lineHeight: '50px', color: "#272727"}}>440</span>
+            <p className='detail-text-color' style={{fontWeight:'500',fontSize:'14px'}}>Job Seekers</p>
+          </div>
+        </div>
+        <div className='col-md-3 border bg-white text-center p-3'>
+          <i className='far fa-smile mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
+          <div>
+          <span  data-speed="1500" data-stop="2887" style={{    fontSize: '40px', lineHeight: '50px', color: "#272727"}}>2887
+</span>
+            <p className='detail-text-color' style={{fontWeight:'500',fontSize:'14px'}}>Happy Customers
+
+</p>
+          </div>
+        </div>
+    </div>
+      </div>
+
+    </div>
+    <div className='bg-white pt-2 pt-md-5'>
+      <div className='container'>
+        <div className='text-center '>
+        <h4 className='theme-color-1'style={{fontSize:'20px'}} >Staffing Recent Closed Projects</h4>
+        <h1 style={{fontSize:'50px',fontWeight:700}}>We Choose a Be Practical</h1>
+        <div className='row mr-md-5 ml-md-5 mb-md-5'>
+            <div className='col-md-4 text-center'>
+                <img src={require('../../img/cont-1.png')}/>
+                <h3>Consult with Team</h3>
+            </div>
+            <div className='col-md-4 text-center'>
+                <img src={require('../../img/cont-2.png')}/>
+                <h3>Make a Schedule</h3>
+            </div>
+            <div className='col-md-4 text-center'>
+                <img src={require('../../img/cont-3.png')}/>
+                <h3>Hire &amp; Enjoy</h3>
+            </div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
         </div>
     );
 }

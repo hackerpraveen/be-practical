@@ -1,5 +1,6 @@
 import './App.css';
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import { BrowserRouter } from "react-router-dom";
 import Routes from './route';
 import 'font-awesome/css/font-awesome.min.css';

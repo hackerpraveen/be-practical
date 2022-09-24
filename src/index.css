@@ -24,6 +24,11 @@ code {
     max-width: 1400px;
   }
 }
+@media (min-width: 768px) {
+  .w-md-75 {
+     width:75%;
+  }
+}
 /** font-size S*/
 .fs-60{
   font-size: 60px;

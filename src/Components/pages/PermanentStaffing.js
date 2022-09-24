@@ -36,7 +36,7 @@ Hiring good Talent into your organization is a serious commitment, so you better
 				
 			</div>
             <div className='d-flex justify-content-center  mb-3 mb-md-5 mt-md-5 mt-3'>
-            <div className='card shadow-lg w-75 '>
+            <div className='card shadow-lg w-md-75  '>
             <div className="text-center align-items-center m-md-5 mt-4 mb-4 m-3">
             <div class="post-media wow fadeIn">
                         <img src={require('../../img/ps-1.png')} alt="" class="img-fluid img-rounded mb-md-5"/>

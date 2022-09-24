@@ -52,80 +52,138 @@ const Home = () => {
     <span class="sr-only">Next</span>
   </a>
 </div>
-    <div className='container'>
+    <div className='container pb-md-5'>
         <div className='row ml-md-5 mr-md-5 mt-md-5 mt-2'>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`,height:'200px'}} >
+              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+                <div className='text-right'>
+              <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>
+                </div>
+                <div className='d-flex align-items-end pb-3 h-100'>
+                <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
+                </div>
+
+                </div>
+                
+              </div>
   <div class="card-body text-center">
-    <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
+    {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 class="card-title">Corporate Training and Induction Program </h5>
-     <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+    <img src={require('../../img/shape-2.png')} /><br/>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
+    {/* <div className='light-icon'>
+      <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
+
+    </div> */}
+     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+  
 
 <div style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
   </div>
 </div>
 
-</div>
+</div> */}
   </div>
 </div>
 
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/hr_03.png')})`,height:'200px'}} >
+              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+                <div className='text-right'>
+              <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
+                </div>
+                <div className='d-flex align-items-end pb-3 h-100'>
+                <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
+                </div>
+
+                </div>
+                
+              </div>
   <div class="card-body text-center">
-    <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
+    {/* <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 class="card-title">Permanent Staffing </h5><br/>
-     <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+    <img src={require('../../img/shape-2.png')} /><br/>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
+     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_03.png')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
   </div>
 </div>
 
-</div>
+</div> */}
   </div>
 </div>
 
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/hr_04.png')})`,height:'200px'}} >
+              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+                <div className='text-right'>
+              <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
+                </div>
+                <div className='d-flex align-items-end pb-3 h-100'>
+                <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
+                </div>
+
+                </div>
+                
+              </div>
   <div class="card-body text-center">
-    <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i>
+    {/* <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 class="card-title">Temporary / Contract Staffing </h5>
-     <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+    <img src={require('../../img/shape-2.png')} /><br/>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
+     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_04.png')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
   </div>
 </div>
 
-</div>
+</div> */}
   </div>
 </div>
 
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+              <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`,height:'200px'}} >
+              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+                <div className='text-right'>
+              <button className='btn  bg-white ' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
+                </div>
+                <div className='d-flex align-items-end pb-3 h-100'>
+                <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
+                </div>
+
+                </div>
+                
+              </div>
   <div class="card-body text-center">
-    <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i>
+    {/* <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i> */}
     <h5 class="card-title">Train & Deploy </h5><br/>
-     <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+    <img src={require('../../img/shape-2.png')} /><br/>
+     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
+     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+
 
 <div style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
   </div>
 </div>
 
-</div>
+</div> */}
   </div>
 </div>
 
@@ -135,6 +193,88 @@ const Home = () => {
         </div>
   
     </div>
+    <div style={{backgroundColor:'#fff'}} className='p-2'>
+    <div className='container'>
+    <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" class="img-fluid img-rounded w-100"/>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="message-box">
+                        <h4 className='theme-color-1'style={{fontSize:'20px'}} >Welcome to Agency</h4>
+                        <h1 style={{fontSize:'50px',fontWeight:700}}>Best Quality Recruitment Staffing Agency</h1>
+                        <p style={{fontSize:'18px'}} className="detail-text-color"><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
+                            &nbsp;&nbsp;</p>
+                            <div className='row'>
+                              <div className='col-md-6 col-12'>
+                                <div className='p-2 green-line-h2'>
+                                  <h5><span>01</span>Strategic Partners</h5>
+                                  <p className='detail-text-color'>Lorem ipsum dolor sited is amet consectetur notted.</p>
+                                </div>
+
+                              </div>
+                              <div className='col-md-6 col-12'>
+                              <div className='p-2 green-line-h2'>
+                                  <h5><span>02</span>Strategic Partners</h5>
+                                  <p className='detail-text-color'>Lorem ipsum dolor sited is amet consectetur notted.</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <hr/>
+                            <div className='row'>
+                              <div className='col-md-6 col-12'>
+                                <div className='d-flex p-2'>
+                                  <div className=''>
+                                    <div className='author-thumb'>
+                                          <img src="https://recvite.smartdemowp.com/wp-content/uploads/author-1.png" width='100%' height='100%'/>
+                                    </div>
+                                  </div>
+                                  <div className='m-3'>
+                                    <h5 className='theme-color-1'>NAME</h5>
+                                    <span style={{fontSize: "16px"}} className='detail-text-color'>CEO & CO FOUNDER</span>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              <div className='col-md-6 col-12'>
+                                <div className='p-2'>
+                                  <div className='experienct-box'>
+                                      <div className='inner pt-2'>
+                                      <h2>38</h2>
+                                      <p>Years of Experience</p>
+                                      </div>
+                                  </div>
+
+                                </div>
+
+                                </div>
+                            </div>
+                    </div>
+                </div>
+				
+				
+			</div>
+    </div>
+
+    </div>
+    <div style={{backgroundImage: `url(${require('../../img/sec-bg-01.jpg')})`, backgroundRepeat: "no-repeat",backgroundSize: 'cover', backgroundAttachment: 'fixed',}}>
+    <div className=' w-100 h-100 pt-md-5 pb-md-5 pt-2 pb-2' style={{ backgroundColor: 'rgba(39, 39, 39, 0.9)'}}>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-6 col-12'>
+          </div>
+          <div className='col-md-6 col-12'>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+ 
     <div className='container'>
     <div class="row align-items-center m-md-5 mt-4 mb-4 m-3">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">

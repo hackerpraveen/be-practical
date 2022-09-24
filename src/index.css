@@ -30,6 +30,9 @@ code {
   }
 }
 /** font-size S*/
+.detail-text-color{
+  color: #757575;
+}
 .fs-60{
   font-size: 60px;
 }

@@ -11,8 +11,104 @@
     background-position: center;
     background-size: cover;
 
+}
+
+.green-line-h2 h5:before {
+  background: #28aa4a;
+}
+.green-line-h2 h5:before {
+  position: absolute;
+  content: '';
+  width: 23px;
+  height: 2px;
+  left: 27px;
+  top: 12px;
+}
+.green-line-h2 h5 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  padding-left: 60px;
+  margin-bottom: 13px;
+}
+.green-line-h2 h5 span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+.green-line-h2 h5 span {
+  color: #28aa4a;
+}
+.green-line-h2 p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.author-thumb {
+  border: 2px solid #28aa4a;
+  border-radius: 50%;
+  padding: 7px;
+  width: 87px;
+    height: 87px;
+    background: #fff;
 
 }
+
+.experienct-box {
+  border: 2px solid #28aa4a;
+  background: #f6f6f6;
+
+  padding: 10px;
+  width: 100%;
+}
+.experienct-box .inner{
+  background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experienct-box .inner h2 {
+  font-size: 50px;
+  /* line-height: 50px; */
+  margin-right: 15px;
+  color: #28aa4a;
+}
+.experienct-box .inner p {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #757575;
+}
+.bg-img-zoom{
+  background-size: 100% 100%;
+  background-position: center;
+
+}
+.bg-img-zoom:hover{
+  background-size: 110% 110%;
+}
+
+.bg-img-zoom:hover .btn{
+  color: #fff;
+  background-color: #28aa4a !important;
+}
+
+.bg-img-zoom:hover i{
+  color: #fff !important;
+}
+.card .card-body .light-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 150px;
+  line-height: 100px;
+  color: rgb(117 117 117/5%);
+  transform: rotate(-15deg);
+}
+
+
 
 /* .bgImg::before {
     content: "";

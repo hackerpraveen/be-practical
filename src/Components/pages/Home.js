@@ -59,43 +59,7 @@ const Home = () => {
 </div>
     <div className='container pb-md-5'>
         <div className='row ml-md-5 mr-md-5 mt-md-5 mt-2'>
-            <div className='col-md-3 '>
-            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`,height:'200px'}} >
-              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
-                <div className='text-right'>
-              <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>
-                </div>
-                <div className='d-flex align-items-end pb-3 h-100'>
-                <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
-                </div>
-
-                </div>
-                
-              </div>
-  <div class="card-body text-center">
-    {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 class="card-title">Corporate Training and Induction Program </h5>
-    <img src={require('../../img/shape-2.png')} /><br/>
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
-    {/* <div className='light-icon'>
-      <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
-
-    </div> */}
-     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
-  
-
-<div style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`}} className='bgImg'>
-  <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
-
-  </div>
-</div>
-
-</div> */}
-  </div>
-</div>
-
-            </div>
+          
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/hr_03.png')})`,height:'200px'}} >
@@ -183,6 +147,43 @@ const Home = () => {
 
 
 <div style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`}} className='bgImg'>
+  <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
+
+  </div>
+</div>
+
+</div> */}
+  </div>
+</div>
+
+            </div>
+            <div className='col-md-3 '>
+            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`,height:'200px'}} >
+              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+                <div className='text-right'>
+              <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>
+                </div>
+                <div className='d-flex align-items-end pb-3 h-100'>
+                <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'50px' }}></i>  
+                </div>
+
+                </div>
+                
+              </div>
+  <div class="card-body text-center">
+    {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
+    <h5 class="card-title">Corporate Training and Induction Program </h5>
+    <img src={require('../../img/shape-2.png')} /><br/>
+    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
+    {/* <div className='light-icon'>
+      <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
+
+    </div> */}
+     {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
+  
+
+<div style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`}} className='bgImg'>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center'>
 
   </div>

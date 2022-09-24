@@ -13,7 +13,7 @@ function Footer(props) {
                 <div class="col-lg-4 col-md-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title text-center w-md-75" style={{backgroundColor:'#fff',borderRadius:'50px',padding:'10px'}}>
-                            <img width="130"  height="auto" class="mr-3" src={require('../../../img/logo_name.png')} alt=""/>
+                            <img width="130"  height="auto" class="mr-3" src={require('../../../img/be-logo.png')} alt=""/>
                         </div>
                         <p> <b>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace.  </p>   
 						<div class="footer-right">
@@ -57,6 +57,9 @@ function Footer(props) {
             </div>
 
        </div>
+      </div>
+      <div class="text-center p-2" style={{backgroundColor: '#272727',color: '#fff',borderTop:'1px solid #fff'}}>
+      © Copyrights 2022 | Designed by Be Practical Tech Solutions
       </div>
       </div>
       

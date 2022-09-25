@@ -17,13 +17,13 @@ const PermanentStaffing = () => {
         <div className='body mb-3 mb-md-5 mt-md-5 mt-3'>
             <div className='container'>
             <div className="row align-items-center m-md-5 mt-4 mb-4 m-3">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="post-media wow fadeIn">
-                        <img src={require('../../img/blog_3.jpg')} alt="" class="img-fluid img-rounded w-100"/>
+        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="post-media wow fadeIn">
+                        <img src={require('../../img/blog_3.jpg')} alt="" className="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="message-box">
                         {/* <h4>Why choose us?</h4> */}
                         <h1>Permanent Staffing</h1>
                         <p style={{fontSize:'18px'}}><b>BE Practical Tech solutions</b>  give you access to fully screened and qualified candidates in any industry . We have a strong team of recruiters who are passionate in  helping your company achieve its business objectives. Our water tight process  guarantees that we offer our clients the best candidates at any level, with the quick turnaround time.
@@ -38,11 +38,11 @@ Hiring good Talent into your organization is a serious commitment, so you better
             <div className='d-flex justify-content-center  mb-3 mb-md-5 mt-md-5 mt-3'>
             <div className='card shadow-lg w-md-75  '>
             <div className="text-center align-items-center m-md-5 mt-4 mb-4 m-3">
-            <div class="post-media wow fadeIn">
-                        <img src={require('../../img/ps-1.png')} alt="" class="img-fluid img-rounded mb-md-5"/>
+            <div className="post-media wow fadeIn">
+                        <img src={require('../../img/ps-1.png')} alt="" className="img-fluid img-rounded mb-md-5"/>
                     </div>
-                {/* <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12"> */}
-                    <div class="message-box">
+                {/* <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12"> */}
+                    <div className="message-box">
                         {/* <h4>Why choose us?</h4> */}
                         {/* <h1>Permanent Staffing</h1> */}
                         <p style={{fontSize:'18px'}}> Once we receive requirments (JD) from our customer, we meticulously study , undertake comprehensive research on the industry, and create interest around your company to attract the best talent. the quality of our candidates which we identify through our tried-and-tested processes. 
@@ -53,7 +53,7 @@ Our expertize in permanent staffing services and our recruiting experts use clie
 &nbsp;&nbsp;</p>
                     </div>
                 {/* </div> */}
-                {/* <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12"> */}
+                {/* <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12"> */}
                
                 {/* </div> */}
 				

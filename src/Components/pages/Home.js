@@ -12,13 +12,13 @@ const Home = () => {
   }
     return (
         <div style={{backgroundColor:"#f6f6f6"}}>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+  <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
       <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up '>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
@@ -29,7 +29,7 @@ const Home = () => {
 
       </div>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
     <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-02.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up'>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
 
       </div>    </div>
-    {/* <div class="carousel-item">
+    {/* <div className="carousel-item">
     <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-04.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white '>
         <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
@@ -48,20 +48,20 @@ const Home = () => {
 
       </div>   </div> */}
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
   </a>
 </div>
     <div className='container pb-md-5'>
         <div className='row ml-md-5 mr-md-5 mt-md-5 mt-2'>
           
             <div className='col-md-3 '>
-            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-2.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
@@ -74,9 +74,9 @@ const Home = () => {
                 </div>
                 
               </div>
-  <div class="card-body text-center">
+  <div className="card-body text-center">
     {/* <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 class="card-title">Permanent Staffing </h5><br/>
+    <h5 className="card-title">Permanent Staffing </h5><br/>
     <img src={require('../../img/shape-2.png')} /><br/>
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
@@ -93,7 +93,7 @@ const Home = () => {
 
             </div>
             <div className='col-md-3 '>
-            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-1.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
@@ -106,9 +106,9 @@ const Home = () => {
                 </div>
                 
               </div>
-  <div class="card-body text-center">
+  <div className="card-body text-center">
     {/* <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 class="card-title">Temporary / Contract Staffing </h5>
+    <h5 className="card-title">Temporary / Contract Staffing </h5>
     <img src={require('../../img/shape-2.png')} /><br/>
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
@@ -125,7 +125,7 @@ const Home = () => {
 
             </div>
             <div className='col-md-3 '>
-            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
               <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-3.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
@@ -138,9 +138,9 @@ const Home = () => {
                 </div>
                 
               </div>
-  <div class="card-body text-center">
+  <div className="card-body text-center">
     {/* <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i> */}
-    <h5 class="card-title">Train & Deploy </h5><br/>
+    <h5 className="card-title">Train & Deploy </h5><br/>
     <img src={require('../../img/shape-2.png')} /><br/>
      <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
@@ -158,7 +158,7 @@ const Home = () => {
 
             </div>
             <div className='col-md-3 '>
-            <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
@@ -171,9 +171,9 @@ const Home = () => {
                 </div>
                 
               </div>
-  <div class="card-body text-center">
+  <div className="card-body text-center">
     {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 class="card-title">Corporate Training and Induction Program </h5>
+    <h5 className="card-title">Corporate Training and Induction Program </h5>
     <img src={require('../../img/shape-2.png')} /><br/>
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
     {/* <div className='light-icon'>
@@ -201,14 +201,14 @@ const Home = () => {
     </div>
     <div style={{backgroundColor:'#fff'}} className='pt-md-2 pb-md-2 pt-1 pb-1'>
     <div className='container'>
-    <div class="row align-items-center m-md-5 mt-4 mb-4 ">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="post-media wow fadeIn">
-                        <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" class="img-fluid img-rounded w-100"/>
+    <div className="row align-items-center m-md-5 mt-4 mb-4 ">
+    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="post-media wow fadeIn">
+                        <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" className="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box mt-md-0 mt-4">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="message-box mt-md-0 mt-4">
                         <h4 className='theme-color-1'style={{fontSize:'20px'}} >Welcome to Agency</h4>
                         <h1 style={{fontSize:'50px',fontWeight:700}}>Best Quality Recruitment Staffing Agency</h1>
                         <p style={{fontSize:'18px'}} className="detail-text-color"><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
@@ -270,9 +270,9 @@ const Home = () => {
     <div style={{backgroundImage: `url(${require('../../img/sec-bg-01.jpg')})`, backgroundRepeat: "no-repeat",backgroundSize: 'cover', backgroundAttachment: 'fixed',}}>
     <div className=' w-100 h-100 pt-md-5 pb-md-5 pt-2 pb-2' style={{ backgroundColor: 'rgba(39, 39, 39, 0.9)'}}>
       <div className='container'>
-      <div class="row align-items-center m-md-5 mt-4 mb-4 ">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box">
+      <div className="row align-items-center m-md-5 mt-4 mb-4 ">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="message-box">
                         <h4 className='theme-color-1' style={{fontSize:'20px'}}>Learn About Agency</h4>
                         <h1 className='text-white' style={{fontSize:'50px',fontWeight:700}}>We’re Reliable & Cost Efficiant Recruitment Agency</h1>
                         <button className='btn btn-secondary theme-bgcolor-1' >Discover More</button>
@@ -281,8 +281,8 @@ const Home = () => {
                     </div>
                 </div>
 				
-				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="post-media wow fadeIn">
+				<div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="post-media wow fadeIn">
                     <Tabs
     defaultActiveKey="1"
     items={[
@@ -295,7 +295,7 @@ const Home = () => {
           </div>
           <div className='col-md-7 '>
             <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
-            <ul class="list clearfix">
+            <ul className="list clearfix">
               <li>Support on hiring employeers</li>
               <li>Get rxceptional service for growth</li>
               <li>Outsourced consulting business</li> </ul>
@@ -312,7 +312,7 @@ const Home = () => {
         </div>
         <div className='col-md-7 '>
           <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
-          <ul class="list clearfix">
+          <ul className="list clearfix">
             <li>Support on hiring employeers</li>
             <li>Get rxceptional service for growth</li>
             <li>Outsourced consulting business</li> </ul>
@@ -331,7 +331,7 @@ const Home = () => {
     </div>
     <div className='overlap-cards '>
       <div className='container'>
-      <div class="row align-items-center m-md-5 mt-4 mb-4 " style={{borderTop:'12px solid #28aa4a'}}>
+      <div className="row align-items-center m-md-5 mt-4 mb-4 " style={{borderTop:'12px solid #28aa4a'}}>
         <div className='col-md-3 border bg-white text-center p-3'>
           <i className='fas fa-clipboard-check mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
           <div>

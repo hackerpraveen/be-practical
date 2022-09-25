@@ -105,7 +105,7 @@ const Header = () => {
                 </Dropdown>
   {/* <a className="nav-link" >  Services </a> */}
 
-            {/* <a className="nav-link">  Contact Us </a> */}
+            <a  className={(window.location.pathname=='/Contact-Us')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('Contact-Us')}}>  Contact Us </a>
             <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a>
 
           </div>

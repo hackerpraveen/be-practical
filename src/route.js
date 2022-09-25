@@ -10,6 +10,7 @@ import PermanentStaffing from './Components/pages/PermanentStaffing';
 import TCStaffing from './Components/pages/TCStaffing';
 import TrainDeploy from './Components/pages/TrainDeploy';
 import About from './Components/pages/About';
+import Contact from './Components/pages/Contact';
 // import Services from './components/services/services';
 
 
@@ -23,6 +24,7 @@ const Routes = () => {
         <SiteLayout path="/Temporary-Contract-Staffing" component={TCStaffing} pagename={'Temporary-Contract-Staffing'} />
         <SiteLayout path="/Train-Deploy" component={TrainDeploy} pagename={'Train-Deploy'} />
         <SiteLayout path="/About-Us" component={About} pagename={'About-Us'} />
+        <SiteLayout path="/Contact-Us" component={Contact} pagename={'Contact-Us'} />
 
         {/* <SiteLayout path="/temp" component={Temp} pagename={'temp'} />
         <SiteLayout path="/about-us"component={About} pagename={'about'} />

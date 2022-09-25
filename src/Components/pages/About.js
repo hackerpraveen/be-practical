@@ -18,14 +18,14 @@ const About = () => {
             <div >
             <div style={{backgroundColor:'#fff'}} className='pt-md-2 pb-md-2 pt-1 pb-1'>
     <div className='container'>
-    <div class="row align-items-center m-md-5 mt-4 mb-4 ">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="post-media wow fadeIn">
-                        <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" class="img-fluid img-rounded w-100"/>
+    <div className="row align-items-center m-md-5 mt-4 mb-4 ">
+    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="post-media wow fadeIn">
+                        <img src="https://recvite.smartdemowp.com/wp-content/uploads/about-1-1.jpg" alt="" className="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="message-box mt-md-0 mt-4">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div className="message-box mt-md-0 mt-4">
                         <h4 className='theme-color-1'style={{fontSize:'20px'}} >Welcome to Agency</h4>
                         <h1 style={{fontSize:'50px',fontWeight:700}}>Best Quality Recruitment Staffing Agency</h1>
                         <p style={{fontSize:'18px'}} className="detail-text-color"><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 

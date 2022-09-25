@@ -5,7 +5,7 @@ const CTIP = () => {
     return (
         <div>
             <div className='banner'>
-            <div style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`,height:'300px'}} className='bgImg '>
+            <div style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'300px'}} className='bgImg '>
   <div className='d-flex justify-content-center w-100 h-100  align-items-center' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
     <div className='text-center '>
     <h1 className='text-white'>Corporate Training and Induction Program</h1>

@@ -62,7 +62,7 @@ const Home = () => {
           
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/hr_03.png')})`,height:'200px'}} >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-2.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -94,7 +94,7 @@ const Home = () => {
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/hr_04.png')})`,height:'200px'}} >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-1.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -126,7 +126,7 @@ const Home = () => {
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
-              <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/blog_2.jpg')})`,height:'200px'}} >
+              <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-3.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
               <button className='btn  bg-white ' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -159,7 +159,7 @@ const Home = () => {
             </div>
             <div className='col-md-3 '>
             <div class="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/ctip-01.jpg')})`,height:'200px'}} >
+            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>

@@ -1,12 +1,57 @@
+import { Dropdown, Menu, Space } from "antd";
 import React from "react";
 import { useHistory } from 'react-router-dom';
 import "./header.css";
+import { DownOutlined, SmileOutlined } from '@ant-design/icons';
+
 
 const Header = () => {
   const history = useHistory();
   const onNavigation = (url) =>{
     history.push(`/${url}`);
   }
+  const menu = (
+    <Menu
+      items={[
+        {
+          key: '1',
+          label: (
+            <a onClick={()=>{onNavigation('Permanent-Staffing')}} >
+              Permanent Staffing 
+            </a>
+          ),
+          icon: <i className="fas fa-people-group"/>,
+        },
+        {
+          key: '2',
+          label: (
+            <a onClick={()=>{onNavigation('Temporary-Contract-Staffing')}} >
+              Temporary / Contract Staffing
+            </a>
+          ),
+          icon: <i className="fas fa-users-between-lines"/>,
+        },
+        {
+          key: '3',
+          label: (
+            <a onClick={()=>{onNavigation('Train-Deploy')}}>
+              Train & Deploy
+            </a>
+          ),
+          icon: <i className="fas fa-person-walking-luggage"/>,
+        },
+        {
+          key: '4',
+          label: (
+            <a onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}} className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1':''} >
+              Corporate Training and Induction Program
+            </a>
+          ),
+          icon: <i  className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1 fas fa-person-chalkboard':'fas fa-person-chalkboard'} />,
+        },
+      ]}
+    />
+  );
   return (
   <div  >
     <div className="sec-header border-bottom border-dark">
@@ -47,9 +92,20 @@ const Header = () => {
          <div className=" pr-0" >
           <div className="collapse navbar-collapse menu " id="navbarCollapse">
           <a className={(window.location.pathname=='/home'||window.location.pathname=='/')?"theme-color-1 nav-link" : "nav-link"}  onClick={()=>{onNavigation('home')}}>  Home </a>
-            <a className="nav-link" >  About Us </a>
-            <a className="nav-link" >  Services </a>
-            <a className="nav-link">  Contact Us </a>
+            <a className={(window.location.pathname=='/About-Us')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('About-Us')}} >  About Us </a>
+            <Dropdown overlay={menu}>
+              <a className={(window.location.pathname=='/Corporate-Training-and-Induction-Program'||
+              window.location.pathname=='/Permanent-Staffing'||
+              window.location.pathname=='/Temporary-Contract-Staffing'||
+              window.location.pathname=='/Train-Deploy')?"theme-color-1 nav-link" : "nav-link"} onClick={e => e.preventDefault()}>
+                    <Space>
+                    Services
+                    </Space>
+                  </a>
+                </Dropdown>
+  {/* <a className="nav-link" >  Services </a> */}
+
+            {/* <a className="nav-link">  Contact Us </a> */}
             <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a>
 
           </div>

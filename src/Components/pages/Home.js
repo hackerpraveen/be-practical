@@ -23,7 +23,7 @@ const Home = () => {
       <div className='text-white slide-up '>
         <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate for your Business </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with our innovative sourcing <br/> and screening strategies and step up your growth story.</p>
-        <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
+        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}}>Discover More</button>
   
         </div>
 
@@ -35,7 +35,7 @@ const Home = () => {
         <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment challenges with ease </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution, you can steer<br/> clear 
 of recruitment hassles and focus on the core processes of your company</p>
-        <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
+        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}}>Discover More</button>
 
         </div>
 
@@ -277,7 +277,7 @@ of recruitment hassles and focus on the core processes of your company</p>
                     <div className="message-box">
                         <h4 className='theme-color-1' style={{fontSize:'20px'}}>Learn About Agency</h4>
                         <h1 className='text-white' style={{fontSize:'50px',fontWeight:700}}>We’re Reliable & Cost Efficiant Recruitment Agency</h1>
-                        <button className='btn btn-secondary theme-bgcolor-1' >Discover More</button>
+                        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}} >Discover More</button>
 
                        
                     </div>

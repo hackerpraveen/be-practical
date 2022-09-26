@@ -19,10 +19,10 @@ const Home = () => {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+      <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up '>
-        <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>There are many of passages of lorem Ipsum, but the majori have <br/>suffered alteration in some form.</p>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate for your Business </h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with our innovative sourcing <br/> and screening strategies and step up your growth story.</p>
         <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
   
         </div>
@@ -30,10 +30,11 @@ const Home = () => {
       </div>
     </div>
     <div className="carousel-item">
-    <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-02.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+    <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>The Right Candidate for your Business </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>There are many of passages of lorem Ipsum, but the majori have <br/>suffered alteration in some form.</p>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment challenges with ease </h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution, you can steer<br/> clear 
+of recruitment hassles and focus on the core processes of your company</p>
         <button className='btn btn-secondary theme-bgcolor-1'>Discover More</button>
 
         </div>
@@ -63,7 +64,7 @@ const Home = () => {
             <div className='col-md-3 '>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-2.jpg')})`,height:'200px'}} >
-              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+              <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
                 </div>
@@ -77,7 +78,7 @@ const Home = () => {
   <div className="card-body text-center">
     {/* <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 className="card-title">Permanent Staffing </h5><br/>
-    <img src={require('../../img/shape-2.png')} /><br/>
+    {/* <img src={require('../../img/shape-2.png')} /><br/> */}
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
@@ -95,7 +96,8 @@ const Home = () => {
             <div className='col-md-3 '>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-1.jpg')})`,height:'200px'}} >
-              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+            {/* style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}} */}
+              <div className=' w-100 h-100  p-3'  >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
                 </div>
@@ -109,7 +111,7 @@ const Home = () => {
   <div className="card-body text-center">
     {/* <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 className="card-title">Temporary / Contract Staffing </h5>
-    <img src={require('../../img/shape-2.png')} /><br/>
+    {/* <img src={require('../../img/shape-2.png')} /><br/> */}
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
@@ -127,7 +129,7 @@ const Home = () => {
             <div className='col-md-3 '>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
               <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-3.jpg')})`,height:'200px'}} >
-              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+              <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn  bg-white ' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
                 </div>
@@ -141,7 +143,7 @@ const Home = () => {
   <div className="card-body text-center">
     {/* <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i> */}
     <h5 className="card-title">Train & Deploy </h5><br/>
-    <img src={require('../../img/shape-2.png')} /><br/>
+    {/* <img src={require('../../img/shape-2.png')} /><br/> */}
      <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
@@ -160,7 +162,7 @@ const Home = () => {
             <div className='col-md-3 '>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
             <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'200px'}} >
-              <div className=' w-100 h-100  p-3' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
+              <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>
                 </div>
@@ -174,7 +176,7 @@ const Home = () => {
   <div className="card-body text-center">
     {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
     <h5 className="card-title">Corporate Training and Induction Program </h5>
-    <img src={require('../../img/shape-2.png')} /><br/>
+    {/* <img src={require('../../img/shape-2.png')} /><br/> */}
     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
     {/* <div className='light-icon'>
       <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
@@ -287,35 +289,52 @@ const Home = () => {
     defaultActiveKey="1"
     items={[
       {
-        label: `For Employers`,
+        label: `Recruitment`,
         key: '1',
         children:(<div className='row fade-in'>
           <div className='col-md-5 '>
               <img src={require('../../img/sec-img-01.jpg')}/>
           </div>
           <div className='col-md-7 '>
-            <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
-            <ul className="list clearfix">
-              <li>Support on hiring employeers</li>
-              <li>Get rxceptional service for growth</li>
-              <li>Outsourced consulting business</li> </ul>
+          
+            <ul className="list clearfix pr-md-3">
+              <li>we will help you to find right resources </li>
+              <li>We’re Reliable & Cost Efficiant Recruitment Agency</li>
+              <li>fully screened and qualified candidates in any industry</li> </ul>
           </div>
 
         </div>),
       },
       {
-        label: `For Employees`,
+        label: `Train and Deploy`,
         key: '2',
        children:(<div className='row fade-in'>
         <div className='col-md-5 '>
             <img src={require('../../img/sec-img-01.jpg')}/>
         </div>
         <div className='col-md-7 '>
-          <p  style={{fontSize: '18px',lineHeight: "34px",fontWeight: '600',color:'#bfbfbf'}}>There are many simply free text available variations of passages of but the majority have in some.</p>
-          <ul className="list clearfix">
-            <li>Support on hiring employeers</li>
-            <li>Get rxceptional service for growth</li>
-            <li>Outsourced consulting business</li> </ul>
+          
+          <ul className="list clearfix pr-md-3">
+            <li>Faster resource identification</li>
+            <li> Effective placement</li>
+            <li>Cost-effective</li> </ul>
+        </div>
+
+      </div>),
+      },
+      {
+        label: `Coporate Training `,
+        key: '3',
+       children:(<div className='row fade-in'>
+        <div className='col-md-5 '>
+            <img src={require('../../img/sec-img-01.jpg')}/>
+        </div>
+        <div className='col-md-7 '>
+          
+          <ul className="list clearfix pr-md-3">
+            <li>Prepare Your Organization with Essential Digital Skills​.</li>
+            <li>Improve company’s reputation.</li>
+            <li> Improve employee retention</li> </ul>
         </div>
 
       </div>),
@@ -331,7 +350,7 @@ const Home = () => {
     </div>
     <div className='overlap-cards '>
       <div className='container'>
-      <div className="row align-items-center m-md-5 mt-4 mb-4 " style={{borderTop:'12px solid #28aa4a'}}>
+      <div className="row align-items-center m-md-5 mt-4 mb-4 " style={{borderTop:'12px solid #25078a'}}>
         <div className='col-md-3 border bg-white text-center p-3'>
           <i className='fas fa-clipboard-check mt-2 mb-2 theme-color-1' style={{fontSize:'65px'}}/>
           <div>

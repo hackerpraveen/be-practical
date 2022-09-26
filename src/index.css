@@ -41,12 +41,14 @@ code {
 }
 /** font-size E*/
 /** colors S*/
+/* color:#28aa4a !important; */
+
 .theme-color-1{
-  color:#28aa4a !important;
+  color:#25078a !important;
 
 }
 .theme-bgcolor-1{
-  background-color:#28aa4a ;
+  background-color:#25078a ;
 }
 .text-color-1st{
   color:#eb3225 !important;

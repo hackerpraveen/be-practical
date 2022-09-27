@@ -19,9 +19,9 @@ const Home = () => {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
-      <div className='text-white slide-up '>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate for your Business </h1>
+      <div className='w-100 d-flex justify-content-end align-items-center p-4 pr-md-5' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+      <div className='text-white slide-up text-right pr-md-5 mr-md-5'>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate for<br/> your Business </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with our innovative sourcing <br/> and screening strategies and step up your growth story.</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}}>Discover More</button>
   
@@ -30,9 +30,9 @@ const Home = () => {
       </div>
     </div>
     <div className="carousel-item">
-    <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
-      <div className='text-white slide-up'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment challenges with ease </h1>
+    <div className='w-100 d-flex justify-content-start align-items-center p-4 pl-md-5' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+      <div className='text-white slide-up pl-md-5 ml-md-5'>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment <br/>challenges with ease </h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution, you can steer<br/> clear 
 of recruitment hassles and focus on the core processes of your company</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}}>Discover More</button>
@@ -215,7 +215,7 @@ of recruitment hassles and focus on the core processes of your company</p>
                         <h1 style={{fontSize:'50px',fontWeight:700}}>Best Quality Recruitment Staffing Agency</h1>
                         <p style={{fontSize:'18px'}} className="detail-text-color"><b className='theme-color-1'>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace. 
                             &nbsp;&nbsp;</p>
-                            <div className='row'>
+                            {/* <div className='row'>
                               <div className='col-md-6 col-12'>
                                 <div className='p-2 green-line-h2'>
                                   <h5><span>01</span>Strategic Partners</h5>
@@ -260,7 +260,7 @@ of recruitment hassles and focus on the core processes of your company</p>
                                 </div>
 
                                 </div>
-                            </div>
+                            </div> */}
                     </div>
                 </div>
 				
@@ -270,7 +270,7 @@ of recruitment hassles and focus on the core processes of your company</p>
 
     </div>
     <div style={{backgroundImage: `url(${require('../../img/sec-bg-01.jpg')})`, backgroundRepeat: "no-repeat",backgroundSize: 'cover', backgroundAttachment: 'fixed',}}>
-    <div className=' w-100 h-100 pt-md-5 pb-md-5 pt-2 pb-2' style={{ backgroundColor: 'rgba(39, 39, 39, 0.9)'}}>
+    <div className=' w-100 h-100 pt-md-5 pb-md-5 pt-2 pb-2' style={{ backgroundColor: 'rgba(110, 95, 95, 0.76)'}}>
       <div className='container'>
       <div className="row align-items-center m-md-5 mt-4 mb-4 ">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">

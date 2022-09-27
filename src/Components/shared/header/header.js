@@ -54,17 +54,17 @@ const Header = () => {
   );
   return (
   <div  >
-    <div className="sec-header border-bottom border-dark">
+    <div className="sec-header " style={{ borderBottom: "1px solid #25078a"}}>
       <div className="container">
         <div className="d-md-flex p-1 justify-content-between">
-          <div style={{color:"#a7a7a7"}} className="row">
+          <div style={{color:"#272727"}} className="row">
           <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
            <span className="mr-3 "><i className="fas fa-phone mr-1 theme-color-1"/> +91-9242079119</span>
            <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span>
 
 
           </div>
-          <div style={{color:"#a7a7a7"}}>
+          <div style={{color:"#272727"}}>
           <i className="fab fa-square-facebook mr-3"/> <i className="fab fa-square-twitter mr-3"/> <i className="fab fa-square-instagram mr-1"/> 
           </div>
         </div>
@@ -77,9 +77,9 @@ const Header = () => {
         <nav className="navbar navbar-expand-md navbar-dark justify-content-between align-items-center  px-0 " >
           <a onClick={()=>{onNavigation('home')}} className="navbar-brand col-auto pl-0">
           
-            <div className='bg-white pl-4 pr-4 ' style={{borderRadius:'50px'}} ><img src={require('../../../img/be-logo.png')} className="" width='auto' height='49px'/> 
+            <img src={require('../../../img/be-logo.png')} className="" width='auto' height='49px'/> 
               {/* <img className="logo"  src="./assets/images/sss-logo.png"/> */}
-            </div>
+            
           </a>
           <button
             type="button"
@@ -106,7 +106,7 @@ const Header = () => {
   {/* <a className="nav-link" >  Services </a> */}
 
             <a  className={(window.location.pathname=='/Contact-Us')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('Contact-Us')}}>  Contact Us </a>
-            <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a>
+            {/* <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a> */}
 
           </div>
 

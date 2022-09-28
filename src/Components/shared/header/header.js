@@ -74,13 +74,14 @@ const Header = () => {
    
     <div className="d-flex sec-header text-white">
       <div className="container px-0" >
-        <nav className="navbar navbar-expand-md navbar-dark justify-content-between align-items-center  px-0 " >
+        <nav className="navbar navbar-expand-md navbar-light justify-content-between align-items-center  px-0 " >
           <a onClick={()=>{onNavigation('home')}} className="navbar-brand col-auto pl-0">
           
             <img src={require('../../../img/be-logo.png')} className="" width='auto' height='49px'/> 
               {/* <img className="logo"  src="./assets/images/sss-logo.png"/> */}
             
           </a>
+
           <button
             type="button"
             className="navbar-toggler"
@@ -93,6 +94,7 @@ const Header = () => {
           <div className="collapse navbar-collapse menu " id="navbarCollapse">
           <a className={(window.location.pathname=='/home'||window.location.pathname=='/')?"theme-color-1 nav-link" : "nav-link"}  onClick={()=>{onNavigation('home')}}>  Home </a>
             <a className={(window.location.pathname=='/About-Us')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('About-Us')}} >  About Us </a>
+        
             <Dropdown overlay={menu}>
               <a className={(window.location.pathname=='/Corporate-Training-and-Induction-Program'||
               window.location.pathname=='/Permanent-Staffing'||

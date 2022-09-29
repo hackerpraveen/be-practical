@@ -20,7 +20,7 @@ const Header = () => {
               Permanent Staffing 
             </a>
           ),
-          icon: <i className="fas fa-people-group"/>,
+          // icon: <i className="fas fa-people-group"/>,
         },
         {
           key: '2',
@@ -29,7 +29,7 @@ const Header = () => {
               Temporary / Contract Staffing
             </a>
           ),
-          icon: <i className="fas fa-users-between-lines"/>,
+          // icon: <i className="fas fa-users-between-lines"/>,
         },
         {
           key: '3',
@@ -38,7 +38,7 @@ const Header = () => {
               Train & Deploy
             </a>
           ),
-          icon: <i className="fas fa-person-walking-luggage"/>,
+          // icon: <i className="fas fa-person-walking-luggage"/>,
         },
         {
           key: '4',
@@ -47,7 +47,7 @@ const Header = () => {
               Corporate Training and Induction Program
             </a>
           ),
-          icon: <i  className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1 fas fa-person-chalkboard':'fas fa-person-chalkboard'} />,
+          // icon: <i  className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1 fas fa-person-chalkboard':'fas fa-person-chalkboard'} />,
         },
       ]}
     />
@@ -58,9 +58,9 @@ const Header = () => {
       <div className="container">
         <div className="d-md-flex p-1 justify-content-between">
           <div style={{color:"#272727"}} className="row">
-          <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
+          {/* <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
            <span className="mr-3 "><i className="fas fa-phone mr-1 theme-color-1"/> +91-9242079119</span>
-           <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span>
+           <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span> */}
 
 
           </div>

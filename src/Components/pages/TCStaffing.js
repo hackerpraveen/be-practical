@@ -8,7 +8,7 @@ const TCStaffing = () => {
   <div className='d-flex justify-content-center w-100 h-100  align-items-center' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
     <div className='text-center '>
     <h1 className='text-white'> Temporary / Contract Staffing</h1>
-    <h5 className='text-white text-bold'><span className='theme-color-1'>Home </span> -  Temporary / Contract Staffing</h5>
+    {/* <h5 className='text-white text-bold'><span className='theme-color-1'>Home </span> -  Temporary / Contract Staffing</h5> */}
         </div>
 
   </div>

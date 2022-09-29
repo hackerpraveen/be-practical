@@ -8,7 +8,7 @@ const TrainDeploy = () => {
   <div className='d-flex justify-content-center w-100 h-100  align-items-center' style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}}>
     <div className='text-center '>
     <h1 className='text-white'> Train & Deploy</h1>
-    <h5 className='text-white text-bold'><span className='theme-color-1'>Home </span> -  Train & Deploy</h5>
+    {/* <h5 className='text-white text-bold'><span className='theme-color-1'>Home </span> -  Train & Deploy</h5> */}
         </div>
 
   </div>
@@ -43,6 +43,9 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
                         <p style={{fontSize:'18px'}}><b>Faster resource identification:</b>   Hiring the right resource is a time-consuming task. Be  Practical has a ready pool of candidates who have undergone processes like pre-screening, aptitude tests, interviews, etc and are ready to be deployed.&nbsp;&nbsp;</p>
                         <p style={{fontSize:'18px'}}><b>Effective placement:</b>  We guarantee smooth on-boarding and final placement of candidates by taking care of processes like placement offers, salary-related formalities, etc. Since the candidate is appropriately selected and trained, there are chances that the placement will generate more ROI.&nbsp;&nbsp;</p>
                         <p style={{fontSize:'18px'}}><b>Cost-effective: </b>  Training the candidates for the specific project requires setting up infrastructure which can give them practical hands-on training. Hire, Train & Deploy service provider has a dedicated team and infrastructure to train the manpower on various skillsets and innovative technologies. This way you can save money on investing in setting up the infrastructure and team inside the organization.&nbsp;&nbsp;</p>
+                        <ul className="list clearfix pr-md-3 pl-3 text-dark" >
+              <li>Aids in the adoption of new technology and processes </li>
+              <li>Increases strategy and product innovation</li> </ul>
                     </div>
                 </div>
 				
@@ -84,16 +87,15 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
 				
 				
 			</div>
-            <div className='d-flex justify-content-center m-md-5 mt-4 mb-4 m-3'>
+            {/* <div className='d-flex justify-content-center m-md-5 mt-4 mb-4 m-3'>
                     <div className='text-center'>
                         <h1>TRAIN  AND DEPLOY PROCESS @Be-practical</h1>
                     <img src={require('../../img/td-2.png')} alt="" className="img-fluid w-md-75 img-rounded mb-md-5"/>
                     <div className="message-box ">
-                        {/* <h4>Why choose us?</h4> */}
                       
                     </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

@@ -54,13 +54,13 @@ const Header = () => {
   );
   return (
   <div  >
-    <div className="sec-header " style={{ borderBottom: "1px solid #25078a"}}>
+    {/* <div className="sec-header " style={{ borderBottom: "1px solid #25078a"}}>
       <div className="container">
         <div className="d-md-flex p-1 justify-content-between">
           <div style={{color:"#272727"}} className="row">
-          {/* <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
+        <span className="mr-3 "><i className="fas fa-envelope mr-1 theme-color-1"/>  info@be-practical.com</span>
            <span className="mr-3 "><i className="fas fa-phone mr-1 theme-color-1"/> +91-9242079119</span>
-           <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span> */}
+           <span className="mr-3 "><i className="fas fa-location-dot mr-1 theme-color-1"/> Bengaluru</span> 
 
 
           </div>
@@ -70,12 +70,12 @@ const Header = () => {
         </div>
 
       </div>
-    </div>
+    </div> */}
    
     <div className="d-flex sec-header text-white">
       <div className="container px-0" >
         <nav className="navbar navbar-expand-md navbar-light justify-content-between align-items-center  px-0 " >
-          <a onClick={()=>{onNavigation('home')}} className="navbar-brand col-auto pl-0">
+          <a onClick={()=>{onNavigation('home')}} className="navbar-brand col-auto pr-5 pr-md-0 pl-md-0">
           
             <img src={require('../../../img/be-logo.png')} className="" width='auto' height='49px'/> 
               {/* <img className="logo"  src="./assets/images/sss-logo.png"/> */}
@@ -84,7 +84,7 @@ const Header = () => {
 
           <button
             type="button"
-            className="navbar-toggler"
+            className="navbar-toggler ml-5"
             data-toggle="collapse"
             data-target="#navbarCollapse"
           >
@@ -106,6 +106,7 @@ const Header = () => {
                   </a>
                 </Dropdown>
   {/* <a className="nav-link" >  Services </a> */}
+  <a  className={(window.location.pathname=='/Career')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('Career')}}>  Career </a>
 
             <a  className={(window.location.pathname=='/Contact-Us')?"theme-color-1 nav-link" : "nav-link"} onClick={()=>{onNavigation('Contact-Us')}}>  Contact Us </a>
             {/* <a  className="nav-link rounded-pill btn theme-bgcolor-1 btn-lg text-white font-weight-bold fs-16 border-0 px-4 py-3" onClick={()=>{onNavigation('members-login')}}> Book appointment</a> */}

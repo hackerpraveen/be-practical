@@ -66,6 +66,18 @@ const Contact = () => {
                                 <a href="info@be-practical.com" className='theme-color-1' style={{fontWeight:'bold'}}>info@be-practical.com</a>
                             </div>
                         </div>
+                        <div className="row mt-3">
+                            <div className="col-3">
+                                <div style={{padding: '14px', backgroundColor:'#F5F5F5', borderRadius: '50%'}} className="text-center">
+                                    <i className="fas fas fa-phone theme-color-1" style={{fontSize: "20px"}}></i>
+                                </div>
+                            </div>
+                            <div className="col-9">
+                                <h4 style={{fontSize: '20px',marginBottom: "8px",
+                                color: "#012060"}} className="mt-1">Our Phone</h4>
+                                <a href="info@be-practical.com" className='theme-color-1' style={{fontWeight:'bold'}}>+91-9242079119</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr/>

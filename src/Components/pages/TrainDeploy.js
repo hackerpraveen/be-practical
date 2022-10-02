@@ -63,7 +63,7 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
                         <h3 >Be Practical  Provides  training for the Most sought-after skills</h3>
                         <div className='pl-md-4'>
 
-                        <p style={{fontSize:'18px'}}><b>1. Fullstack Development Courses</b>  
+                        <p style={{fontSize:'18px'}}><span style={{backgroundColor:'#272727',color:'#fff',fontSize:'16px',padding:'3px 10px',borderRadius:'50%',marginRight:'10px'}}>1</span><b>Fullstack Development Courses</b>  
                         <ul className="list clearfix pl-md-4" style={{color:'#757575'}}>
               <li>Mean Fullstack</li>
               <li>Mern Fullstack</li>
@@ -72,14 +72,14 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
               <li>Java Fullstack</li>
               <li>Php Fullstack</li>
               <li>Dot net Fullstack</li> </ul></p>
-                        <p style={{fontSize:'18px'}}><b>2. Software Testing </b>  
+                        <p style={{fontSize:'18px'}}><span style={{backgroundColor:'#272727',color:'#fff',fontSize:'16px',padding:'3px 10px',borderRadius:'50%',marginRight:'10px'}}>2</span><b>Software Testing </b>  
                         <ul className="list clearfix pl-md-4" style={{color:'#757575'}}>
               <li>Manual testing </li>
               <li>Automation Testing</li>
               </ul></p>
-              <p style={{fontSize:'18px'}}><b>3. Cloud Computing </b>  </p>
-              <p style={{fontSize:'18px'}}><b>4. Digital Marketing </b>  </p>
-              <p style={{fontSize:'18px'}}><b>5. Hardware Networking </b>  </p>
+              <p style={{fontSize:'18px'}}><span style={{backgroundColor:'#272727',color:'#fff',fontSize:'16px',padding:'3px 10px',borderRadius:'50%',marginRight:'10px'}}>3</span><b>Cloud Computing </b>  </p>
+              <p style={{fontSize:'18px'}}><span style={{backgroundColor:'#272727',color:'#fff',fontSize:'16px',padding:'3px 10px',borderRadius:'50%',marginRight:'10px'}}>4</span><b>Digital Marketing </b>  </p>
+              <p style={{fontSize:'18px'}}><span style={{backgroundColor:'#272727',color:'#fff',fontSize:'16px',padding:'3px 10px',borderRadius:'50%',marginRight:'10px'}}>5</span><b>Hardware Networking </b>  </p>
               </div>
 
                                             </div>

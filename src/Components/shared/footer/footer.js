@@ -12,71 +12,84 @@ function Footer(props) {
       history.push(`/${url}`);
     }
     return (
-      <div className='sec-footer ' >
+      <div className='sec-footer bgImg' style={{backgroundImage:`url(${require('../../../img/footer.png')})`}}  >
+
         <div className='container'>
        <div className='m-md-5 m-3 '>
        <div className="row">
                 <div className="col-lg-4 col-md-4 col-xs-12">
-                    <div className="widget clearfix">
-                        <div className="widget-title text-center w-md-75" style={{backgroundColor:'#fff',borderRadius:'50px',padding:'10px'}}>
-                            <img width="130"  height="auto" className="mr-3" src={require('../../../img/be-logo.png')} alt=""/>
-                        </div>
-                        <p> <b>Be practical Academia</b> offers training in diverse domains to graduates, Be practical Academia offers training in diverse domains to graduates, during graduation phase. These certificate courses enable students to boost their career prospects and find placement in IT industries.  After the completion of these certificate courses across many sunrise segments such as Digital and Business Analytics, the learners will future-proof themselves and remain relevant for the rapidly evolving technology marketplace.  </p>   
-						<div className="footer-right">
-						</div>						
+                    <div className='title'>
+                        PHONE
                     </div>
+                    <div className='line'/>
+                    <h2 className='content'>
+                    +91-9242079119
+                    </h2>
+                    <div className='title'>
+                    EMAIL
+                    </div>
+                    <div className='line'/>
+                    <h2 className='content'>
+                    info@be-practical.com
+                    </h2>
+                    <div className='title'>
+                    ADDRESS
+                    </div>
+                    <div className='line'/>
+                    <h2 className='content'>
+                    #737C 1st Floor 1st Cross, 3rd Stage, 4th Block Basaveshwara Nagar Bengaluru-560079
+
+                    </h2>
+
                 </div>
 
-				<div className="col-lg-4 col-md-4 col-xs-12 ">
-                    <div className="widget clearfix text-md-center">
-                        <div className="widget-title">
-                            <h3>Information Link</h3>
-                        </div>
-                        <ul className="footer-links">
-                            <li><a  onClick={()=>{onNavigation('home')}}>Home</a></li>
-                            <li> <a onClick={()=>{onNavigation('Permanent-Staffing')}} >
-              Permanent Staffing 
-            </a></li>
-                            <li> <a onClick={()=>{onNavigation('Temporary-Contract-Staffing')}} >
-              Temporary / Contract Staffing
-        </a></li>
-                            <li> <a onClick={()=>{onNavigation('Train-Deploy')}}>
-              Train & Deploy
-        </a></li>
-                            <li><a onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}} className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1':''} >
-              Corporate Training and Induction Program
-            </a></li>
-                            <li><a onClick={()=>{onNavigation('About-Us')}}>About Us</a></li>
-                            <li><a onClick={()=>{onNavigation('Contact-Us')}}>Contact Us</a></li>
+				<div className="col-lg-4 col-md-4 col-xs-12 pl-md-5">
+                <div className='title'>
+                QUICKLINKS
 
-                        </ul>
                     </div>
+                    <div className='line'/>
+                    <div className='content-link' onClick={()=>{onNavigation('home')}}>
+                    Home
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Permanent-Staffing')}}>
+                    Permanent Staffing
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>
+                    Temporary / Contract Staffing
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Train-Deploy')}}>
+                    Train & Deploy
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>
+                    Corporate Training and Induction Program
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('About-Us')}}>
+                    About Us
+                    </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Contact-Us')}}>
+                    Contact Us
+                    </div>
+
+
                 </div>
 				
-                <div className="col-lg-4 col-md-4 col-xs-12 ">
-                    <div className="widget clearfix text-md-right">
-                        <div className="widget-title">
-                            <h3>Contact Details</h3>
-                        </div>
-
-                        <ul className="footer-links">
-                            <li><a href="mailto:#">info@be-practical.com</a></li>
-                            {/* <li><a href="#">www.yoursite.com</a></li>  */}
-                            <li>#737C 1st Floor 1st Cross, 3rd Stage, 4th Block</li>
-                            <li>Basaveshwara Nagar</li>
-                            <li>Bengaluru-560079</li>
-                            <li>+91-9242079119</li>
-                        </ul>
-                    </div>
+                <div className="col-lg-3 col-md-3 col-xs-12 ">
+                   
                 </div>
 				
             </div>
-
+        <div className='d-md-flex justify-content-between mt-5'>
+        <div className='footer-cr'>	All rights reserved. © Be Practical 2022						</div>
+        <div className='footer-cr' style={{fontSize:'18px'}}>
+          <i className="fab fa-square-facebook mr-2"/> <i className="fab fa-square-twitter mr-2"/> <i className="fas fa-envelope mr-2"/> 
+          </div>
+        </div>
        </div>
       </div>
-      <div className="text-center p-2" style={{backgroundColor: '#272727',color: '#fff',borderTop:'1px solid #fff'}}>
+      {/* <div className="text-center p-2" style={{backgroundColor: '#272727',color: '#fff',borderTop:'1px solid #fff'}}>
       © Copyrights 2022 | Designed by Be Practical Tech Solutions
-      </div>
+      </div> */}
       </div>
       
     )

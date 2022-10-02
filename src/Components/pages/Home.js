@@ -16,6 +16,8 @@ const Home = () => {
   <ol className="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -39,7 +41,20 @@ of recruitment hassles and focus on the core processes of your company</p>
 
         </div>
 
-      </div>    </div>
+      </div>  
+        </div>
+        <div className="carousel-item">
+    <div className='w-100 d-flex justify-content-start align-items-center p-4 pl-md-5' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+      <div className='text-white slide-up pl-md-5 ml-md-5'>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Corporate Training   <br/>in Bangalore</h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Prepare Your Organization with Essential Digital Skills
+</p>
+        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Discover More</button>
+
+        </div>
+
+      </div>  
+        </div>
     {/* <div className="carousel-item">
     <div className='w-100 d-flex justify-content-center align-items-center p-4' style={{backgroundImage:`url(${require('../../img/slide-04.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white '>
@@ -59,11 +74,11 @@ of recruitment hassles and focus on the core processes of your company</p>
   </a>
 </div>
     <div className='container pb-md-5'>
-        <div className='row ml-md-5 mr-md-5 mt-md-5 mt-2'>
+        <div className='row  mt-md-5 mt-2'>
           
-            <div className='col-md-3 '>
-            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-2.jpg')})`,height:'200px'}} >
+            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100 card-effect" >
+            {/* <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-2.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -74,12 +89,15 @@ of recruitment hassles and focus on the core processes of your company</p>
 
                 </div>
                 
-              </div>
-  <div className="card-body text-center">
-    {/* <i className='fas fa-people-group mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 className="card-title">Permanent Staffing </h5><br/>
+              </div> */}
+  <div className="card-body ">
+    <i className='fas fa-people-group mb-4 mt-3 logo-color-2 ' style={{fontSize:'40px'}}></i>
+    <h4 className="">Permanent Staffing </h4>
+    <p className='mt-3'>
+    Our approach towards recruitment is fully tailor made for each requirement.
+    </p>
     {/* <img src={require('../../img/shape-2.png')} /><br/> */}
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</button>
+    <div className='link-box' onClick={()=>{onNavigation('Permanent-Staffing')}}>Read More</div>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_03.png')})`}} className='bgImg'>
@@ -93,10 +111,10 @@ of recruitment hassles and focus on the core processes of your company</p>
 </div>
 
             </div>
-            <div className='col-md-3 '>
-            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-1.jpg')})`,height:'200px'}} >
+            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100 card-effect" >
             {/* style={{ backgroundColor: 'rgba(52, 73, 94, 0.75)'}} */}
+            {/* <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-1.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3'  >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -107,12 +125,15 @@ of recruitment hassles and focus on the core processes of your company</p>
 
                 </div>
                 
-              </div>
-  <div className="card-body text-center">
-    {/* <i className='fas fa-users-between-lines mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 className="card-title">Temporary / Contract Staffing </h5>
+              </div> */}
+  <div className="card-body ">
+    <i className='fas fa-users-between-lines mb-4 mt-3 logo-color-2' style={{fontSize:'40px'}}></i>
+    <h4 className="card-title">Temporary / Contract Staffing </h4>
+    <p className='mt-3'>
+    Building an agile and flexible workforce requires an easy and fast access to expert talent, available on short notice.
+    </p>
     {/* <img src={require('../../img/shape-2.png')} /><br/> */}
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</button>
+    <div className='link-box' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Read More</div>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 <div style={{backgroundImage:`url(${require('../../img/hr_04.png')})`}} className='bgImg'>
@@ -126,9 +147,9 @@ of recruitment hassles and focus on the core processes of your company</p>
 </div>
 
             </div>
-            <div className='col-md-3 '>
-            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
-              <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-3.jpg')})`,height:'200px'}} >
+            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100 card-effect" >
+              {/* <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-3.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn  bg-white ' style={{fontSize:"12px",fontWeight:"bold"}}>RESOURCES</button>
@@ -139,12 +160,15 @@ of recruitment hassles and focus on the core processes of your company</p>
 
                 </div>
                 
-              </div>
-  <div className="card-body text-center">
-    {/* <i className='fas fa-person-walking-luggage mb-4 mt-3 theme-color-1' style={{fontSize:'80px' }}></i> */}
-    <h5 className="card-title">Train & Deploy </h5><br/>
+              </div> */}
+  <div className="card-body ">
+    <i className='fas fa-person-walking-luggage mb-4 mt-3 logo-color-2' style={{fontSize:'40px' }}></i>
+    <h4 className="card-title">Train & Deploy </h4>
+    <p className='mt-3'>
+    We provide Training & Development services for Indian clients. 
+    </p>
     {/* <img src={require('../../img/shape-2.png')} /><br/> */}
-     <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</button>
+     <div className='link-box' onClick={()=>{onNavigation('Train-Deploy')}}>Read More</div>
      {/* <div style={{height:'150px',width:'100%'}} className='p-bgImg'>
 
 
@@ -159,9 +183,9 @@ of recruitment hassles and focus on the core processes of your company</p>
 </div>
 
             </div>
-            <div className='col-md-3 '>
-            <div className="card mt-md-1 mt-3 mb-md-1 mb-3" >
-            <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'200px'}} >
+            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100 card-effect" >
+            {/* <div className='bg-img-zoom'  style={{backgroundImage:`url(${require('../../img/card-4.jpg')})`,height:'200px'}} >
               <div className=' w-100 h-100  p-3' >
                 <div className='text-right'>
               <button className='btn bg-white' style={{fontSize:"12px",fontWeight:"bold"}}>MANAGEMENT</button>
@@ -172,12 +196,15 @@ of recruitment hassles and focus on the core processes of your company</p>
 
                 </div>
                 
-              </div>
-  <div className="card-body text-center">
-    {/* <i className='fas fa-person-chalkboard mb-4 mt-3 theme-color-1' style={{fontSize:'80px'}}></i> */}
-    <h5 className="card-title">Corporate Training and Induction Program </h5>
+              </div> */}
+  <div className="card-body ">
+    <i className='fas fa-person-chalkboard mb-4 mt-3 logo-color-2' style={{fontSize:'40px'}}></i>
+    <h4 className="card-title">Corporate Training and Induction Program </h4>
+    <p className='mt-3'>
+    Be-practical provides corporate training to small, medium and large scale industry. 
+    </p>
     {/* <img src={require('../../img/shape-2.png')} /><br/> */}
-    <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</button>
+    <div className='link-box' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</div>
     {/* <div className='light-icon'>
       <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
 
@@ -389,20 +416,20 @@ of recruitment hassles and focus on the core processes of your company</p>
     <div className='bg-white pt-2 pt-md-5'>
       <div className='container'>
         <div className='text-center '>
-        <h4 className='theme-color-1'style={{fontSize:'20px'}} >Staffing Recent Closed Projects</h4>
-        <h1 style={{fontSize:'50px',fontWeight:700}}>We Choose a Be Practical</h1>
+        {/* <h4 className='theme-color-1'style={{fontSize:'20px'}} >Staffing Recent Closed Projects</h4> */}
+        <h1 style={{fontSize:'50px',fontWeight:700}}>Why Choose Be-Practical</h1>
         <div className='row mr-md-5 ml-md-5 mb-md-5'>
             <div className='col-md-4 text-center'>
                 <img src={require('../../img/cont-1.png')}/>
-                <h3>Consult with Team</h3>
+                <h4>Understand your challenges </h4>
             </div>
             <div className='col-md-4 text-center'>
                 <img src={require('../../img/cont-2.png')}/>
-                <h3>Make a Schedule</h3>
+                <h4>Design best solutions that suits your needs</h4>
             </div>
             <div className='col-md-4 text-center'>
                 <img src={require('../../img/cont-3.png')}/>
-                <h3>Hire &amp; Enjoy</h3>
+                <h4>Ensuring your satisfaction through High quality & timely  delivery</h4>
             </div>
         </div>
         </div>

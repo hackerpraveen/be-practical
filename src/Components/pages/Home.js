@@ -21,10 +21,10 @@ const Home = () => {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className='w-100 d-flex justify-content-end align-items-center p-4 pr-md-5' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+      <div className='w-100 d-flex justify-content-end align-items-center p-4 pr-md-4' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up text-right pr-md-5 mr-md-5'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate for<br/> your Business </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with our innovative sourcing <br/> and screening strategies and step up your growth story.</p>
+        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate<br/> for your Business </h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with<br/> our innovative sourcing  and screening<br/> strategies and step up your growth story.</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Discover More</button>
   
         </div>
@@ -35,8 +35,8 @@ const Home = () => {
     <div className='w-100 d-flex justify-content-start align-items-center p-4 pl-md-5' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
       <div className='text-white slide-up pl-md-5 ml-md-5'>
         <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment <br/>challenges with ease </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution, you can steer<br/> clear 
-of recruitment hassles and focus on the core processes of your company</p>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution,<br/> you can steer clear 
+of recruitment hassles and focus<br/> on the core processes of your company</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Discover More</button>
 
         </div>
@@ -303,7 +303,7 @@ of recruitment hassles and focus on the core processes of your company</p>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="message-box">
                         {/* <h4 className='theme-color-1' style={{fontSize:'20px'}}>Learn About Agency</h4> */}
-                        <h1 className='text-white' style={{fontSize:'50px',fontWeight:700}}>We’re Reliable & Cost Efficiant Recruitment Agency</h1>
+                        <h1 className='text-white' style={{fontSize:'50px',fontWeight:700}}>We’re Reliable & Cost Efficient Recruitment Agency</h1>
                         {/* <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Contact-Us')}} >Discover More</button> */}
 
                        

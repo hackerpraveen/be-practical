@@ -41,7 +41,11 @@
   margin-bottom: 25px;
 
 }
-
+.about-us-line{
+  width: 50px;
+  height: 17px;
+border-bottom: 4px solid #00387a ;
+}
 .career-card .career-card-header{
   padding: 15px 40px;
   background: #00387a;
@@ -179,13 +183,20 @@ padding: 40px;
   font-size: 18px;
   color: #fff;
 }
+.ant-tabs-tab.ant-tabs-tab-active{
+  background: #25078a;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #25078a;
+  color: #fff;
   text-shadow: 0 0 0.25px currentcolor;
+  background: #25078a;
 }
 .ant-tabs-ink-bar {
 
-  background: #25078a;
+  background: none;
 }
 .ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
   color: #25078a;

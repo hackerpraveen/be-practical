@@ -52,7 +52,7 @@ Our expertize in permanent staffing services and our recruiting experts use clie
                                             </div>
                                             <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                     <div className="post-media wow fadeIn">
-                        <img src={require('../../img/ps-1.png')} alt="" className="img-fluid img-rounded w-100"/>
+                        <img src={require('../../img/staffing-services.png')} alt="" className="img-fluid img-rounded  w-100"/>
                     </div>
                 </div>
 				

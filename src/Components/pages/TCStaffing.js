@@ -30,7 +30,7 @@ const TCStaffing = () => {
                 </div>
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 p-3">
                     <div className="post-media wow fadeIn">
-                        <img src={require('../../img/TCS-1.png')} alt="" className="img-fluid img-rounded w-100"/>
+                        <img src={require('../../img/contract-hiring.png')} alt="" className="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
 				

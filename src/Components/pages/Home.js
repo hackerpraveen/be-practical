@@ -1,15 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './pages.css';
 
 import { useHistory } from 'react-router-dom';
-import { Tabs } from 'antd';
+import { Select, Tabs } from 'antd';
 
 
 const Home = () => {
+  const [ddValue, setDdValue] = useState('Recruitment');
   const history = useHistory();
   const onNavigation = (url) =>{
     history.push(`/${url}`);
   }
+const tabData = ()=>{
+  switch(ddValue) {
+    case 'Recruitment':
+      return <div className='pl-3 fade-in'>
+     
+      <ul className="list clearfix pr-md-3">
+        <li>we will help you to find right resources </li>
+        <li>We’re Reliable & Cost Efficiant Recruitment Agency</li>
+        <li>fully screened and qualified candidates in any industry</li> </ul>
+
+  </div>;
+    
+      case 'Train and Deploy':
+      return <div className='pl-3 fade-in'>
+   
+        
+      <ul className="list clearfix pr-md-3">
+        <li>Faster resource identification</li>
+        <li> Effective placement</li>
+        <li>Cost-effective</li> </ul>
+
+  </div>;
+   
+      case 'Coporate Training':
+      return <div className='pl-3 fade-in'>
+ 
+       
+      <ul className="list clearfix pr-md-3">
+        <li>Prepare Your Organization with Essential Digital Skills​.</li>
+        <li>Improve company’s reputation.</li>
+        <li> Improve employee retention</li> </ul>
+
+  </div>;
+    default:
+      return <div></div>;
+  }
+}
+
     return (
         <div style={{backgroundColor:"#f6f6f6"}}>
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -312,23 +351,28 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
 				
 				<div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="post-media wow fadeIn">
-                    <Tabs
+                    <Select defaultValue="Recruitment" style={{ width: 200 }} onChange={(e)=>setDdValue(e)}>
+      <Select.Option value="Recruitment">Recruitment</Select.Option>
+      <Select.Option value="Train and Deploy">Train and Deploy</Select.Option>
+    
+      <Select.Option value="Coporate Training">Coporate Training</Select.Option>
+    </Select>
+    <div className='p-4'>
+
+    {tabData()}
+    </div>
+                    {/* <Tabs
     defaultActiveKey="1"
     items={[
       {
         label: `Recruitment`,
         key: '1',
         children:(<div className='pl-3 fade-in'>
-          {/* <div className='col-md-5 '>
-              <img src={require('../../img/sec-img-01.jpg')}/>
-          </div>
-          <div className='col-md-7 '>
-           */}
+     
             <ul className="list clearfix pr-md-3">
               <li>we will help you to find right resources </li>
               <li>We’re Reliable & Cost Efficiant Recruitment Agency</li>
               <li>fully screened and qualified candidates in any industry</li> </ul>
-          {/* </div> */}
 
         </div>),
       },
@@ -336,16 +380,12 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
         label: `Train and Deploy`,
         key: '2',
        children:(<div className='pl-3 fade-in'>
-        {/* <div className='col-md-5 '>
-            <img src={require('../../img/sec-img-01.jpg')}/>
-        </div>
-        <div className='col-md-7 '> */}
+     
           
           <ul className="list clearfix pr-md-3">
             <li>Faster resource identification</li>
             <li> Effective placement</li>
             <li>Cost-effective</li> </ul>
-        {/* </div> */}
 
       </div>),
       },
@@ -353,21 +393,17 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
         label: `Coporate Training `,
         key: '3',
        children:(<div className='pl-3 fade-in'>
-        {/* <div className='col-md-5 '>
-            <img src={require('../../img/sec-img-01.jpg')}/>
-        </div> */}
-        {/* <div className='col-md-7 '> */}
+    
           
           <ul className="list clearfix pr-md-3">
             <li>Prepare Your Organization with Essential Digital Skills​.</li>
             <li>Improve company’s reputation.</li>
             <li> Improve employee retention</li> </ul>
-        {/* </div> */}
 
       </div>),
       }
     ]}
-  />
+  /> */}
                     </div>
                 </div>
 			</div>

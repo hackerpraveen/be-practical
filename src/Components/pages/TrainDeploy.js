@@ -18,7 +18,7 @@ const TrainDeploy = () => {
             <div className='container'>
                 <div className='d-flex justify-content-center m-md-5 mt-4 mb-4 m-3'>
                     <div className='text-center'>
-                    <img src={require('../../img/td-01.jpg')} alt="" className="img-fluid img-rounded mb-md-5"/>
+                    <img src={require('../../img/td-01.jpeg')} alt="" className="img-fluid img-rounded mb-md-5"/>
                     <div className="message-box ">
                         {/* <h4>Why choose us?</h4> */}
                         {/* <h1>Permanent Staffing</h1> */}
@@ -112,7 +112,7 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
             <div className="row align-items-center m-md-5 mt-4 mb-4 m-3 flex-md-row-reverse">
         <div className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                     <div className="post-media wow fadeIn">
-                        <img src={require('../../img/td-1.jpg')} alt="" className="img-fluid img-rounded w-100"/>
+                        <img src={require('../../img/td-1.png')} alt="" className="img-fluid img-rounded w-100"/>
                     </div>
                 </div>
                 <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">

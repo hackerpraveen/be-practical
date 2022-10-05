@@ -64,6 +64,9 @@ function Footer(props) {
                     <div className='content-link' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>
                     Corporate Training and Induction Program
                     </div>
+                    <div className='content-link' onClick={()=>{onNavigation('Career')}}>
+                    Career
+                    </div>
                     <div className='content-link' onClick={()=>{onNavigation('About-Us')}}>
                     About Us
                     </div>

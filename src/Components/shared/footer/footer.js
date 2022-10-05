@@ -82,7 +82,7 @@ function Footer(props) {
         <div className='d-md-flex justify-content-between mt-5'>
         <div className='footer-cr'>	All rights reserved. © Be Practical 2022						</div>
         <div className='footer-cr' style={{fontSize:'18px'}}>
-          <i className="fab fa-square-facebook mr-2"/> <i className="fab fa-square-twitter mr-2"/> <i className="fas fa-envelope mr-2"/> 
+          <i className="fab fa-square-facebook mr-2"/> <i className="fab fa-square-twitter mr-2"/> <i className="fas fa-envelope mr-2"/> <i className="fab fa-square-youtube mr-2"/> 
           </div>
         </div>
        </div>

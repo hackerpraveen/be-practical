@@ -12,6 +12,7 @@ import TrainDeploy from './Components/pages/TrainDeploy';
 import About from './Components/pages/About';
 import Contact from './Components/pages/Contact';
 import Career from './Components/pages/Career';
+import JobPost from './Components/pages/JobPost';
 // import Services from './components/services/services';
 
 
@@ -27,6 +28,8 @@ const Routes = () => {
         <SiteLayout path="/About-Us" component={About} pagename={'About-Us'} />
         <SiteLayout path="/Contact-Us" component={Contact} pagename={'Contact-Us'} />
         <SiteLayout path="/Career" component={Career} pagename={'Career'} />
+        <SiteLayout path="/Job-post/:id" component={JobPost} pagename={'Job-post'} />
+
 
         {/* <SiteLayout path="/temp" component={Temp} pagename={'temp'} />
         <SiteLayout path="/about-us"component={About} pagename={'about'} />

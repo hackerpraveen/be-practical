@@ -3,11 +3,11 @@ import { Route} from 'react-router-dom';
 import Header  from '../header/header';
 import Footer  from '../footer/footer';
 const SiteLayout = (props) => {
-  const { component: Component, ...rest} = props;
+  const { component: Component, ...rest} = props
     return (
       <React.Fragment>
         <Header />
-        <Route {...rest} render={(props) =>{
+        <Route exact {...rest} render={(props) =>{
           return  <Component {...props}/> ;
            }} />
         <Footer />

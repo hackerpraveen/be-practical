@@ -40,22 +40,47 @@ const Career = () => {
             </div>
             <div >
               <div className='pt-md-2 pb-md-2 pt-1 pb-1'>
-                <div className='container mt-md-5 text-center'  >
+                <div className='container mt-md-5 '  >
                <h6 style={{    textTransform: 'uppercase', color: '#737373'}}>WE ARE HIRING</h6> 
                 <h1 style={{fontWeight:'800'}}>A Dream Job Awaits You</h1>
                 <p style={{fontSize:'18px'}}>We have the right job for you!</p>
-                <Spin spinning={loading}>
+                {/* <Spin spinning={loading}> */}
+                <div className='career-card'>
+                    <div className='career-card-header'>
+                        Hiring IT & Non IT Recruiters with min 6 months Experience
+                    </div>
+                    <div className='career-card-body'>
+                            <h6 style={{borderBottom: '2px solid rgba(0, 0, 0, 0.5)', width: 'fit-content'}}>
+                            <b>Descriptions:</b>
+                            </h6>
+                            <p style={{fontSize:'16px'}}>
+                            Be Practical having 150 Recruiters onboard is looking to expand their Business.
 
-                <div>
-                {/* <Select defaultValue="null" style={{ width: 120 }} >
-      <Select.Option value="null">all</Select.Option>
-      <Select.Option value="">Lucy</Select.Option>
-      <Select.Option value="Yiminghe">yiminghe</Select.Option>
-    </Select> */}
+                            </p>
+                            <h6 style={{borderBottom: '2px solid rgba(0, 0, 0, 0.5)', width: 'fit-content'}}>
+                            <b>Desired Skills:</b>
+                            </h6>
+                            <ul  style={{fontSize:'16px'}}>
+<li>Willingness to learn New Technology concepts and processes</li>
+<li>Graduates with good communication skills, both verbal and written.</li>
+<li>Proven experience in a recruiting role.</li>
+<li>Talented candidates willing to get back to their career after a break are also welcome.</li>
+<li>multilingual candidates would have an added advantage.</li>
+<li>Ability to explore new ways of reaching potential candidates.</li>
+<li>Keen ability to evaluate candidates and determine if they may fit with the position and company.</li>
+</ul>
+<h6 >
+                            <b>Drop your CV to info@be-practical.com
+</b>
+                            </h6>
+                            <button type="button" class="btn btn-light m-3">APPLY NOW</button>
 
+                    </div>
 
                 </div>
-                <div className='row m-md-5 mt-4 mb-4'>
+
+              
+                {/* <div className='row m-md-5 mt-4 mb-4'>
                   {jobData?.map((e)=>{
                     return(
                       <div className='col-md-6 col-12 text-left' key={e._id}>
@@ -82,8 +107,8 @@ const Career = () => {
                   }
                   
 
-                </div>
-                </Spin >
+                </div> */}
+                {/* </Spin > */}
 
                 </div>
 

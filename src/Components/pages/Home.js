@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
 import './pages.css';
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { useHistory } from 'react-router-dom';
 import { Select, Tabs } from 'antd';
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
 
-
-const Home = () => {
+const Home = (props) => {
   const [ddValue, setDdValue] = useState('Recruitment');
   const history = useHistory();
   const onNavigation = (url) =>{
@@ -88,7 +105,7 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
         <h1 className='text-white' style={{fontSize:'55px'}}>Corporate Training   <br/>in Bangalore</h1>
         <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Prepare Your Organization with Essential Digital Skills
 </p>
-        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Discover More</button>
+        <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{window.open('https://be-practical.com/corporate-training-in-bangalore/ ')}}>Discover More</button>
 
         </div>
 
@@ -243,7 +260,7 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
     Be-practical provides corporate training to small, medium and large scale industry. 
     </p>
     {/* <img src={require('../../img/shape-2.png')} /><br/> */}
-    <div className='link-box' onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}}>Read More</div>
+    <div className='link-box' onClick={()=>{window.open('https://be-practical.com/corporate-training-in-bangalore/ ')}}>Read More</div>
     {/* <div className='light-icon'>
       <img src="https://cdn-icons-png.flaticon.com/512/2329/2329029.png" />
 
@@ -449,6 +466,48 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
       </div>
 
     </div> */}
+    <div  className='bg-white pt-2 pt-md-5'>
+      <div className='container'>
+      <div className='mr-md-5 ml-md-5 pb-md-5'>
+      <Carousel
+  swipeable={true}
+  draggable={false}
+  showDots={false}
+  responsive={responsive}
+  ssr={true} // means to render carousel on server-side.
+  infinite={true}
+  autoPlay={true}
+  autoPlaySpeed={5000}
+  keyBoardControl={true}
+  customTransition="all .5"
+  transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
+  deviceType={props.deviceType}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px p-2 p-md-4"
+>
+  <div className='text-center'>
+      <div className='shadow rounded-circle p-3'>
+        <img src={require('../../img/client-1.png')} width={150} height={100}/>
+      </div>
+  </div>
+  <div className='text-center'><div className='shadow rounded-circle p-3'>
+        <img src={require('../../img/client-2.png')} width={150} height={100}/>
+      </div></div>
+  <div className='text-center'><div className='shadow rounded-circle p-3'>
+        <img src={require('../../img/client-3.png')} width={150} height={100}/>
+      </div></div>
+  <div className='text-center'><div className='shadow rounded-circle p-3'>
+        <img src={require('../../img/client-4.png')} width={150} height={100}/>
+      </div></div>
+</Carousel>
+
+        </div>
+
+      </div>
+
+    </div>
     <div className='bg-white pt-2 pt-md-5'>
       <div className='container'>
         <div className='text-center '>

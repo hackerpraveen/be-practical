@@ -21,7 +21,7 @@ const Routes = () => {
     return (
       <Switch>
         <SiteLayout path="/home" component={Home} pagename={'home'} />
-        <SiteLayout path="/Corporate-Training-and-Induction-Program" component={CTIP} pagename={'Corporate-Training-and-Induction-Program'} />
+        {/* <SiteLayout path="/Corporate-Training-and-Induction-Program" component={CTIP} pagename={'Corporate-Training-and-Induction-Program'} /> */}
         <SiteLayout path="/Permanent-Staffing" component={PermanentStaffing} pagename={'Permanent-Staffing'} />
         <SiteLayout path="/Temporary-Contract-Staffing" component={TCStaffing} pagename={'Temporary-Contract-Staffing'} />
         <SiteLayout path="/Train-Deploy" component={TrainDeploy} pagename={'Train-Deploy'} />

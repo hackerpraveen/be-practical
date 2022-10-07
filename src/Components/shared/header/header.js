@@ -43,7 +43,7 @@ const Header = () => {
         {
           key: '4',
           label: (
-            <a onClick={()=>{onNavigation('Corporate-Training-and-Induction-Program')}} className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1':''} >
+            <a onClick={()=>{window.open('https://be-practical.com/corporate-training-in-bangalore/ ')}} className={window.location.pathname=='/Corporate-Training-and-Induction-Program'?'theme-color-1':''} >
               Corporate Training and Induction Program
             </a>
           ),

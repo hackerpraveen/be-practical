@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './pages.css';
 import axios from 'axios';
-import { Select, Spin } from 'antd';
+import { Button, Empty, Form, Input, Modal, Select, Spin, Upload } from 'antd';
 import { useHistory } from 'react-router-dom';
+import { PlusOutlined } from '@ant-design/icons';
 
 
 
 const Career = () => {
   const [jobData, setJobData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData,setModalData] = useState({})
+
 
   const history = useHistory();
   const onNavigation = (url,val) =>{
@@ -18,13 +22,45 @@ const Career = () => {
     axios.get(`http://localhost:4000/api/job-post/getall`).then((res)=>{
         console.log(res.data);
         setJobData(res.data);
-
         setLoading(false)
-
     })
    
   }, []);
 
+   const applyNow=(data)=>{
+    setModalData(data)
+    setIsModalOpen(true)
+
+   }
+   const handleOk = () => {
+    setIsModalOpen(false);
+    setModalData({})
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+    setModalData({})
+
+  };
+  const [image, setImage] = useState(null)
+
+  const updateImage =   (e) => {
+    // var file = document.querySelector('input[type=file]').files[0];
+    // console.log(file);
+    // let base64Image =  convertBase64String(file);
+    // base64Image.then(response=>setImage(response))
+    setImage(e.target.files[0])
+};
+
+const onFinish = (val) =>{
+  console.log(val);
+  const formData = new FormData()
+  formData.append('file', image)
+  formData.append('fileName', image.name)
+
+  formData.append('data',val)
+  axios.post("http://localhost:4000/apply-post",formData)
+}
     return (
         <>
              <div className='banner'>
@@ -44,40 +80,46 @@ const Career = () => {
                <h6 style={{    textTransform: 'uppercase', color: '#737373'}}>WE ARE HIRING</h6> 
                 <h1 style={{fontWeight:'800'}}>A Dream Job Awaits You</h1>
                 <p style={{fontSize:'18px'}}>We have the right job for you!</p>
-                {/* <Spin spinning={loading}> */}
-                <div className='career-card'>
+                <Spin spinning={loading}>
+                  {jobData.length>0?( 
+                  jobData.map((e)=>{
+                    return ( <div className='career-card'>
                     <div className='career-card-header'>
-                        Hiring IT & Non IT Recruiters with min 6 months Experience
+                        {e.jobTitle}
                     </div>
                     <div className='career-card-body'>
                             <h6 style={{borderBottom: '2px solid rgba(0, 0, 0, 0.5)', width: 'fit-content'}}>
                             <b>Descriptions:</b>
                             </h6>
                             <p style={{fontSize:'16px'}}>
-                            Be Practical having 150 Recruiters onboard is looking to expand their Business.
-
+                              {e.jobDesc}
                             </p>
+                            {JSON.parse(e.desiredSkills).length>0?(<>
+                          
                             <h6 style={{borderBottom: '2px solid rgba(0, 0, 0, 0.5)', width: 'fit-content'}}>
                             <b>Desired Skills:</b>
                             </h6>
                             <ul  style={{fontSize:'16px'}}>
-<li>Willingness to learn New Technology concepts and processes</li>
-<li>Graduates with good communication skills, both verbal and written.</li>
-<li>Proven experience in a recruiting role.</li>
-<li>Talented candidates willing to get back to their career after a break are also welcome.</li>
-<li>multilingual candidates would have an added advantage.</li>
-<li>Ability to explore new ways of reaching potential candidates.</li>
-<li>Keen ability to evaluate candidates and determine if they may fit with the position and company.</li>
-</ul>
-<h6 >
+                            {JSON.parse(e.desiredSkills).map((val)=>{   
+                                    return(
+                                    <li>{val}</li>
+                                    )
+                                  })}
+                              </ul>
+                              </>):null}
+                              <h6 >
                             <b>Drop your CV to info@be-practical.com
-</b>
+                                </b>
                             </h6>
-                            <button type="button" class="btn btn-light m-3">APPLY NOW</button>
+                            <button type="button" class="btn btn-light m-3" onClick={()=>applyNow({title:"title"})}>APPLY NOW</button>
 
                     </div>
 
-                </div>
+                </div>)
+                  })
+                 
+                ):<Empty />}
+              
 
               
                 {/* <div className='row m-md-5 mt-4 mb-4'>
@@ -108,13 +150,62 @@ const Career = () => {
                   
 
                 </div> */}
-                {/* </Spin > */}
+                </Spin >
 
                 </div>
 
               </div>
             
             </div>
+            <Modal title={modalData.title} open={isModalOpen} footer={null} onCancel={handleCancel}>
+              <Form
+        labelCol={{ span: 6 }}
+        wrapperCol={{ span: 16 }}
+        layout="horizontal"
+        onFinish={onFinish}
+        onFinishFailed={(e)=>console.log(e)}
+        
+        >
+        <Form.Item
+        label="Name"
+        name="name"
+        rules={[{ required: true, message: 'Please input your Name!' }]}
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        label="Email ID"
+        name="email"
+        rules={[{ required: true, message: 'Please input your Email ID!',type: 'email' }]}
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        label="Mobile Number"
+        name="mobile"
+        rules={[{ required: true, message: 'Please input your Mobile Number!' }]}
+      >
+        <Input />
+      </Form.Item>
+      {/* valuePropName="fileList" */}
+        <Form.Item label="Upload"  name="upload">
+          {/* <Upload action={(e)=>{console.log(e);}} listType="picture-card">
+            <div>
+              <PlusOutlined />
+              <div style={{ marginTop: 8 }}>Upload</div>
+            </div>
+          </Upload> */}
+                   <input  type="file"  onChange={updateImage} />
+
+        </Form.Item>
+        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
+
+        </Form>
+      </Modal>
             
         </>
     );

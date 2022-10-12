@@ -18,7 +18,7 @@ const JobPost = () => {
   }
   useEffect(() => {
 
-    axios.post(`http://localhost:4000/api/job-post/getById`,{_id:params.id}).then((res)=>{
+    axios.post(`https://be-practical-api.herokuapp.com/api/job-post/getById`,{_id:params.id}).then((res)=>{
         console.log(res.data);
         setJobData(res.data)
           setLoading(false)

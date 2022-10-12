@@ -19,7 +19,7 @@ const Career = () => {
     history.push(`/${url}/${val}`);
   }
   useEffect(() => {
-    axios.get(`http://localhost:4000/api/job-post/getall`).then((res)=>{
+    axios.get(`https://be-practical-api.herokuapp.com/api/job-post/getall`).then((res)=>{
         console.log(res.data);
         setJobData(res.data);
         setLoading(false)
@@ -32,10 +32,10 @@ const Career = () => {
     setIsModalOpen(true)
 
    }
-   const handleOk = () => {
-    setIsModalOpen(false);
-    setModalData({})
-  };
+  //  const handleOk = () => {
+  //   setIsModalOpen(false);
+  //   setModalData({})
+  // };
 
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -49,6 +49,7 @@ const Career = () => {
     // console.log(file);
     // let base64Image =  convertBase64String(file);
     // base64Image.then(response=>setImage(response))
+    console.log(e.target.files[0],"typr");
     setImage(e.target.files[0])
 };
 
@@ -57,9 +58,15 @@ const onFinish = (val) =>{
   const formData = new FormData()
   formData.append('file', image)
   formData.append('fileName', image.name)
+  formData.append('data',JSON.stringify({...val,jobId:modalData._id,jobTitle:modalData.jobTitle,fileType:image.type}))
+  axios.post("https://be-practical-api.herokuapp.com/apply-post/insert",formData).then((res)=>{
+    console.log(res);
+    setIsModalOpen(false);
+    setModalData({});
+    alert("Applied Successfully")
 
-  formData.append('data',val)
-  axios.post("http://localhost:4000/apply-post",formData)
+
+  })
 }
     return (
         <>
@@ -111,7 +118,7 @@ const onFinish = (val) =>{
                             <b>Drop your CV to info@be-practical.com
                                 </b>
                             </h6>
-                            <button type="button" class="btn btn-light m-3" onClick={()=>applyNow({title:"title"})}>APPLY NOW</button>
+                            <button type="button" class="btn btn-light m-3" onClick={()=>applyNow(e)}>APPLY NOW</button>
 
                     </div>
 

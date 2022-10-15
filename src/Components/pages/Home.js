@@ -77,12 +77,15 @@ const tabData = ()=>{
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <div className='w-100 d-flex justify-content-end align-items-center p-4 pr-md-4' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
-      <div className='text-white slide-up text-right pr-md-5 mr-md-5'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Hire Right Candidate<br/> for your Business </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Find and engage the right talent faster with<br/> our innovative sourcing  and screening<br/> strategies and step up your growth story.</p>
+      <div className='w-100 banner-class' style={{backgroundImage:`url(${require('../../img/banner_1.jpg')})`,backgroundSize: "cover",}}  >
+        <div className='w-100 h-100 p-4 pr-md-4 d-flex justify-content-end align-items-center  fade-bg-dark' >
+
+      <div className='text-white slide-up text-right pr-md-5 mr-md-5' >
+        <h1 className='text-white' >Hire Right Candidate<br/> for your Business </h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto'}}>Find and engage the right talent faster with<br/> our innovative sourcing  and screening<br/> strategies and step up your growth story.</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Permanent-Staffing')}}>Discover More</button>
   
+        </div>
         </div>
 
       </div>

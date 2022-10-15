@@ -195,7 +195,7 @@ const onFinish = (val) =>{
         <Input />
       </Form.Item>
       {/* valuePropName="fileList" */}
-        <Form.Item label="Upload"  name="upload">
+        <Form.Item label="Resume"  name="upload">
           {/* <Upload action={(e)=>{console.log(e);}} listType="picture-card">
             <div>
               <PlusOutlined />

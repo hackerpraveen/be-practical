@@ -18,7 +18,7 @@ const TrainDeploy = () => {
             <div className='container'>
                 <div className='d-flex justify-content-center m-md-5 mt-4 mb-4 m-3'>
                     <div className='text-center'>
-                    <img src={require('../../img/td-01.jpeg')} alt="" className="img-fluid img-rounded mb-md-5"/>
+                    <img src={require('../../img/train-and-deploy.png')} alt="" className="img-fluid img-rounded mb-md-5"/>
                     <div className="message-box ">
                         {/* <h4>Why choose us?</h4> */}
                         {/* <h1>Permanent Staffing</h1> */}
@@ -33,7 +33,7 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
                 <div className='m-md-5 mt-4 mb-4 m-3'>
                 <h3 >Benefits of Hire, Train & Deploy staffing services are :</h3>
                 <div className='row justify-content-around   '>
-                <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+                <div className='col-md-4 mt-md-1 mt-3 mb-md-1 mb-3'>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100" >
          
   <div className="card-body text-center ">
@@ -48,7 +48,7 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
 </div>
 
             </div>
-            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className='col-md-4 mt-md-1 mt-3 mb-md-1 mb-3'>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100" >
          
   <div className="card-body text-center ">
@@ -63,7 +63,7 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
 </div>
 
             </div>
-            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>
+            <div className='col-md-4 mt-md-1 mt-3 mb-md-1 mb-3'>
             <div className="card mt-md-1 mt-3 mb-md-1 mb-3 h-100" >
          
   <div className="card-body text-center ">
@@ -78,13 +78,13 @@ Companies are eagerly searching for capable trainees, graduates, and professiona
 </div>
 
             </div>
-            <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>  <div className='h-100 d-flex align-items-center'>
+            {/* <div className='col-md-3 mt-md-1 mt-3 mb-md-1 mb-3'>  <div className='h-100 d-flex align-items-center'>
                 <ul className="list clearfix pr-md-3 pl-3 text-dark " >
               <li>Aids in the adoption of new technology and processes </li>
               <li>Increases strategy and product innovation</li> </ul>
 
           
-                </div> </div>
+                </div> </div> */}
          
                 </div>
 

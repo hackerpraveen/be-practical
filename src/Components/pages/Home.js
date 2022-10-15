@@ -91,25 +91,31 @@ const tabData = ()=>{
       </div>
     </div>
     <div className="carousel-item">
-    <div className='w-100 d-flex justify-content-start align-items-center p-4 pl-md-5' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+    <div className='w-100 banner-class' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,backgroundSize: "cover"}}  >
+    <div className='w-100 h-100 p-4 pr-md-4 d-flex justify-content-end align-items-center  fade-bg-dark' >
+
       <div className='text-white slide-up pl-md-5 ml-md-5'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Solve your recruitment <br/>challenges with ease </h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>With the right recruitment process outsourcing solution,<br/> you can steer clear 
+        <h1 className='text-white' >Solve your recruitment <br/>challenges with ease </h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto'}}>With the right recruitment process outsourcing solution,<br/> you can steer clear 
 of recruitment hassles and focus<br/> on the core processes of your company</p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{onNavigation('Temporary-Contract-Staffing')}}>Discover More</button>
 
+        </div>
         </div>
 
       </div>  
         </div>
         <div className="carousel-item">
-    <div className='w-100 d-flex justify-content-start align-items-center p-4 pl-md-5' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,height:'600px',backgroundSize: "cover"}}  >
+    <div className='w-100 banner-class' style={{backgroundImage:`url(${require('../../img/slide-01.jpg')})`,backgroundSize: "cover"}}  >
+    <div className='w-100 h-100 p-4 pr-md-4 d-flex justify-content-end align-items-center  fade-bg-dark' >
+
       <div className='text-white slide-up pl-md-5 ml-md-5'>
-        <h1 className='text-white' style={{fontSize:'55px'}}>Corporate Training   <br/>in Bangalore</h1>
-        <p style={{fontStyle:'italic',fontFamily: 'Roboto',fontSize:'25px'}}>Prepare Your Organization with Essential Digital Skills
+        <h1 className='text-white' >Corporate Training   <br/>in Bangalore</h1>
+        <p style={{fontStyle:'italic',fontFamily: 'Roboto'}}>Prepare Your Organization with Essential Digital Skills
 </p>
         <button className='btn btn-secondary theme-bgcolor-1' onClick={()=>{window.open('https://be-practical.com/corporate-training-in-bangalore/ ')}}>Discover More</button>
 
+        </div>
         </div>
 
       </div>  

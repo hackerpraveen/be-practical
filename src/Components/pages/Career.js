@@ -115,7 +115,7 @@ const onFinish = (val) =>{
                               </ul>
                               </>):null}
                               <h6 >
-                            <b>Drop your CV to info@be-practical.com
+                            <b>Drop your CV to {e.dropMail}
                                 </b>
                             </h6>
                             <button type="button" class="btn btn-light m-3" onClick={()=>applyNow(e)}>APPLY NOW</button>

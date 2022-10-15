@@ -480,10 +480,10 @@ of recruitment hassles and focus<br/> on the core processes of your company</p>
   ssr={true} // means to render carousel on server-side.
   infinite={true}
   autoPlay={true}
-  autoPlaySpeed={5000}
+  autoPlaySpeed={1200}
   keyBoardControl={true}
   customTransition="all .5"
-  transitionDuration={500}
+  transitionDuration={1200}
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
   deviceType={props.deviceType}

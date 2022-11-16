@@ -92,7 +92,7 @@ const tabData = ()=>{
     </div>
     <div className="carousel-item">
     <div className='w-100 banner-class' style={{backgroundImage:`url(${require('../../img/banner_2.jpg')})`,backgroundSize: "cover"}}  >
-    <div className='w-100 h-100 p-4 pr-md-4 d-flex justify-content-end align-items-center  fade-bg-dark' >
+    <div className='w-100 h-100 p-4 pr-md-4 d-flex align-items-center  fade-bg-dark' >
 
       <div className='text-white slide-up pl-md-5 ml-md-5'>
         <h1 className='text-white' >Solve your recruitment <br/>challenges with ease </h1>
